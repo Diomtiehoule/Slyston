@@ -25,8 +25,9 @@ li{
 .d-flex{
     display: flex;
     align-items: center;
+    padding: 10px;
 }
 
-/* .nav-link:hover{
-    border-bottom: 2;
-} */
+.nav-link:hover{
+    border-bottom: 2px solid #8f980a;
+}
