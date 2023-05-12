@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background: #092B3A;
+    height: 12vh;
+}
+
+.menu .top{
+    display: none;
+}
+.logo a{
+    text-decoration: none;
+    color: #fff;
+}
+ul li a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+
+/* .nav-link:hover{
+    border-bottom: 2;
+} */
