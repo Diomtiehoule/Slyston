@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #092B3A;
+}
+input{
+    height: 4vh;
+    border: transparent;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+    width: 75%;
+    margin-top: 5%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: blue;
+}
+
+/* FORMULAIRE POUR L'INSCRIPTION DES UTILISATEURS */
+.container{
+    margin-left: 12%;
+    margin-top: 5%;
+    display: flex;
+}
+.container .image img{
+    height: 80vh;
+    margin: 0 auto;
+}
+.form{
+    background-color: white;
+    width: 25%;
+    height: 80vh;
+}
+.form i:nth-child(1){
+    font-size: 5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 15%;
+    margin-top: 4%;
+}
+.form .Email i, .form .Password i{
+    margin-left: 3%;
+}
+.form .Email{
+    margin-bottom: 5%;
+}
+.form .Password{
+    margin-bottom: 5%;
+}
+.Email ,.Password{
+    
+    margin-left: 10%;
+}
+button{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    width: 40%;
+    height: 5vh;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background-color: #E5B406;
+    color: black;
+    border: none;
+}
+
+
+
+/* les autres methodes de connexion aux comptes */
+.form .facebook,.form .google{
+    display: flex;
+    width: 80%;
+    height: 5vh;
+    margin: 0 auto;
+    cursor: pointer;
+
+}
+.form .facebook{
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+.form .facebook i ,.form .google i{
+    font-size: 1.2rem;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+.form .facebook p ,.form .google p{
+    font-size: 1rem;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+.form .google {
+    background-color: #E95151;
+    margin-bottom: 5%;
+}
+.form .facebook {
+    background-color: #5E81FF;
+}
