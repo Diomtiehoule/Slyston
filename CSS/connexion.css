@@ -32,12 +32,12 @@ a:hover{
     height: 80vh;
     margin: 0 auto;
 }
-.form{
+.form-connexion{
     background-color: white;
     width: 25%;
     height: 80vh;
 }
-.form i:nth-child(1){
+.form-connexion i:nth-child(1){
     font-size: 5rem;
     justify-content: center;
     align-items: center;
@@ -45,16 +45,16 @@ a:hover{
     margin-bottom: 15%;
     margin-top: 4%;
 }
-.form .Email i, .form .Password i{
+.form-connexion .EmailConnexion i, .form-connexion .PasswordConnexion i{
     margin-left: 3%;
 }
-.form .Email{
+.form-connexion .EmailConnexion{
     margin-bottom: 5%;
 }
-.form .Password{
+.form-connexion .PasswordConnexion{
     margin-bottom: 5%;
 }
-.Email ,.Password{
+.EmailConnexion ,.PasswordConnexion{
     
     margin-left: 10%;
 }
@@ -76,7 +76,7 @@ button{
 
 
 /* les autres methodes de connexion aux comptes */
-.form .facebook,.form .google{
+.form-connexion .facebook,.form-connexion .google{
     display: flex;
     width: 80%;
     height: 5vh;
@@ -84,24 +84,24 @@ button{
     cursor: pointer;
 
 }
-.form .facebook{
+.form-connexion .facebook{
     margin-top: 5%;
     margin-bottom: 2%;
 }
-.form .facebook i ,.form .google i{
+.form-connexion .facebook i ,.form-connexion .google i{
     font-size: 1.2rem;
     padding-top: 2%;
     padding-left: 2%;
 }
-.form .facebook p ,.form .google p{
+.form-connexion .facebook p ,.form-connexion .google p{
     font-size: 1rem;
     padding-top: 2%;
     padding-left: 2%;
 }
-.form .google {
+.form-connexion .google {
     background-color: #E95151;
     margin-bottom: 5%;
 }
-.form .facebook {
+.form-connexion .facebook {
     background-color: #5E81FF;
 }

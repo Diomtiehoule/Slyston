@@ -35,12 +35,12 @@ a:hover{
     height: 80vh;
     margin: 0 auto;
 }
-.form{
+.form-inscription{
     background-color: white;
     width: 25%;
     height: 80vh;
 }
-.form i:nth-child(1){
+.form-inscription i:nth-child(1){
     font-size: 5rem;
     justify-content: center;
     align-items: center;
@@ -48,16 +48,16 @@ a:hover{
     margin-bottom: 15%;
     margin-top: 4%;
 }
-.form .Email i, .form .Password i, .form .Email_confirme i{
+.form-inscription .EmailInscription i, .form-inscription .Password_inscription i, .form-inscription .Email_confirme_inscription i{
     margin-left: 3%;
 }
-.form .Email{
+.form-inscription .EmailInscription{
     margin-bottom: 5%;
 }
-.form .Password{
+.form-inscription .Password_inscription{
     margin-bottom: 5%;
 }
-.Email ,.Password ,.Email_confirme{
+.EmailInscription ,.Password_inscription ,.Email_confirme_inscription{
     
     margin-left: 10%;
 }
@@ -76,10 +76,47 @@ button{
     border: none;
 }
 
-.form p{
+.form-inscription p{
     margin-top: 20%;
     font-size: 1rem;
     justify-content: center;
     align-items: center;
     display: flex;
+}
+
+@media screen and (max-width : 1200px) {
+    .form-inscription{
+        background-color: white;
+        width: 30%;
+        height: 80vh;
+    }
+    .form-inscription p{
+        margin-top: 5%;
+    }
+    .form-inscription i:nth-child(1){
+        font-size: 5rem;
+        margin-bottom: 10%;
+        margin-top: 4%;
+    }
+}
+@media screen and (max-width : 1010px) {
+    .form-inscription{
+        background-color: white;
+        width: 30%;
+        height: 80vh;
+    }
+    .container .image img{
+        width: 40%;
+    }
+    .form-inscription p{
+        margin-top: 8%;
+    }
+    .form-inscription i:nth-child(1){
+        font-size: 5rem;
+        margin-bottom: 10%;
+        margin-top: 4%;
+    }
+    .form-inscription .lastP{
+        font-size: .9rem;
+    }
 }

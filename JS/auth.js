@@ -1,50 +1,29 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+//   les bouttons utiliser  pour les connexion et inscription
+const btnConnect = document.querySelector('#submit_connexion');
+const btnInscription = document.querySelector('#submit_inscription');
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyCfVY0ZgXyyxFzG1yGdolJ0TNj_8JhV2KQ",
-  authDomain: "slystonbank.firebaseapp.com",
-  projectId: "slystonbank",
-  storageBucket: "slystonbank.appspot.com",
-  messagingSenderId: "225846274598",
-  appId: "1:225846274598:web:658cf49ecfd602747014e7",
-  measurementId: "G-NB2646C4EM"
-};
+// les inputs et leurs valeurs
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app); 
+const EmailInscription = document.querySelector('#user_mail_inscription');
+const mdpInscription = document.querySelector('#user_password_inscription');
+const verifMdpInscription = document.querySelector('#user_passwordConfirme_inscription');
 
-const auth = firebase.auth();
-const db = firebase.firestore();
+const emailConnexion = document.querySelector('#user_mail_connexion');
+const mdpConnexion = document.querySelector('#user_password_connexion');
+
+//   formulaire inscription et connexion
+
+const formInscription = document.querySelector('.form-inscription');
+const formConnexion = document.querySelector('.form-connexion');
 
 
+formInscription.addEventListener('submit', (e)=>{
 
+  e.preventDefault();
+  const EmailInscriptionValeur = EmailInscription.value;
+  const mdpInscriptionValeur = mdpInscription.value;
 
-
-
-
-
-
-
-
-
-// Inscription des utilisateurs
-
-const mailVal = document.querySelector('.Email');
-const passVal = document.querySelector('.Passeword');
-const passConfirm =  document.querySelector('.Email_confirme');
-
-const Email = mailVal.value;
-const key = passVal.value;
-
-auth.createUserWithEmailAndPassword(Email,key).then(cred =>{
-    console.log(cred);
+  app.createUserWithEmailAndPassword(EmailInscriptionValeur,mdpInscriptionValeur).then(cred =>{
+    console.log('inscription effecuter');
+  })
 })
-
-Form.reset();

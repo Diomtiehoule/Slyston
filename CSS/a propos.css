@@ -1,0 +1,459 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header */
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: #273B4A;
+}
+
+/* MAIN-IMAGE */
+#main-image{
+    background-image: url('../IMAGES/istockphoto-1372128397-612x612.jpg');
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 10%;
+}
+#main-image h1{
+    padding-top: 20%;
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+}
+
+/* presentation */
+.presentation{
+    width: 100%;
+    background-color: #273B4A;
+    display: flex;
+    color: white;
+    margin-bottom: 3%;
+}
+.presentation img{
+    width: 35%;
+    height: 100vh;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+.presentation .textPresentation{
+    text-align: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.presentation .textPresentation p{
+    font-size: 2.5rem;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.presentation h1{
+    font-size: 3rem;
+    margin-bottom: 5%;
+}
+
+.walletImg{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.walletImg img{
+    width: 40%;
+    height: 50vh;
+}
+
+/* avantages */
+.avantages{
+    margin-bottom: 15%;
+}
+.avantages h2{
+    text-align: center;
+    margin-top: 7%;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+    font-size: 2rem;
+}
+.avantages .divers{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.avantages .divers h3{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.avantages i{
+    font-size: 5rem;
+    margin-bottom: 4%;
+}
+.avantages p{
+    font-size: 1.2rem;
+    margin-top: 2%;
+}
+
+/* partie rejoindre */
+
+.join{
+    background-image: url('../IMAGES/globe.png');
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.join h4{
+    font-size: 2.5rem;
+    float: left;
+    width: 70%;
+    margin: 6% 0 0 2%;
+}
+.join p{
+    float: left;
+    font-size: 2rem;
+    width: 60%;
+    margin: 6% 0 0 2%;
+}
+
+/* partenaire de la banque */
+
+.ourPartner{
+    margin-top: 15%;
+    text-align: center;
+}
+.ourPartner h5{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 5%;
+}
+.ourPartner img{
+    width: 20%;
+    height: 10%;
+}
+.ourPartner .partenaires{
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* responsive */
+
+@media screen and (max-width : 900px) {
+    .presentation .textPresentation h1{
+        font-size: 2rem;
+    }
+    .presentation .textPresentation p{
+        font-size: 1.8rem;
+    }
+    .join h4{
+        font-size: 1.7rem;
+        margin-top: 8%;
+    }
+    .join p{
+        font-size: 1.5rem;
+    }
+    .ourPartner h5{
+        font-size: 1.5rem;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width : 700px) {
+    #main-image{
+        height: 60vh;
+    }
+    #main-image h1{
+        padding-top: 15%;
+    }
+    .presentation .textPresentation h1{
+        font-size: 1.4rem;
+    }
+    .presentation .textPresentation p{
+        font-size: 1.6rem;
+    }
+    .avantages .divers h3{
+        font-size: 1.3rem;
+    }
+    .avantages i{
+        font-size: 4rem;
+    }
+    .avantages .divers p{
+        font-size: 1rem;
+    }
+    .join{
+        height: 60vh;
+    }
+    .join h4{
+        margin-top: 5%;
+    }
+    .walletImg img{
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    #main-image{
+        height: 55vh;
+    }
+    .presentation .textPresentation h1{
+        font-size: 1.1rem;
+    }
+    .presentation .textPresentation p{
+        font-size: 1.2rem;
+    }
+    .presentation img{
+        height: 70vh;
+    }
+    .avantages h2{
+        font-size: 1.7rem;
+        margin-top: 15%;
+    }
+    .avantages .divers{
+        display: inline;
+    }
+    .avantages .divers h3{
+        font-size: 1.1rem;
+    }
+    .avantages i{
+        font-size: 3rem;
+    }
+    .avantages .divers p{
+        font-size: .9rem;
+        margin-right: 2.5%;
+        margin-bottom: 4%;
+    }
+    .join{
+        height: 60vh;
+    }
+    .join h4{
+        font-size: 1.4rem;
+        margin-top: 8%;
+    }
+    .join p{
+        font-size: 1.2rem;
+        margin-top: 9%;
+    }
+    .ourPartner h5{
+        font-size: 1.2rem;
+        justify-content: center;
+    }
+    .walletImg img{
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    #main-image{
+        height: 55vh;
+    }
+    #main-image h1{
+        font-size: 2rem;
+        padding-top: 25%;
+    }
+    .presentation .textPresentation h1{
+        font-size: .9rem;
+    }
+    .presentation .textPresentation p{
+        font-size: 1rem;
+    }
+    .presentation img{
+        height: 65vh;
+    }
+    .avantages h2{
+        font-size: 1.6rem;
+        margin-top: 15%;
+    }
+    .avantages .divers{
+        display: inline;
+    }
+    .avantages .divers h3{
+        font-size: 1rem;
+    }
+    .avantages i{
+        font-size: 3rem;
+    }
+    .avantages .divers p{
+        font-size: .9rem;
+        margin-right: 2.5%;
+        margin-bottom: 4%;
+    }
+    .join{
+        height: 50vh;
+    }
+    .join h4{
+        font-size: 1.1rem;
+        margin-top: 8%;
+    }
+    .join p{
+        font-size: 1.1rem;
+        margin-top: 9%;
+    }
+    .ourPartner h5{
+        font-size: .8rem;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width : 300px) {
+    #main-image{
+        height: 50vh;
+    }
+    #main-image h1{
+        font-size: 1.5rem;
+    }
+    .presentation .textPresentation h1{
+        font-size: .6rem;
+    }
+    .presentation .textPresentation p{
+        font-size: .8rem;
+    }
+    .presentation img{
+        height: 60vh;
+    }
+    .avantages h2{
+        font-size: 1.5rem;
+        margin-top: 15%;
+    }
+    .avantages .divers{
+        display: inline;
+    }
+    .avantages .divers h3{
+        font-size: 1rem;
+    }
+    .avantages i{
+        font-size: 3rem;
+    }
+    .avantages .divers p{
+        font-size: .8rem;
+        margin-right: 2.5%;
+        margin-bottom: 4%;
+    }
+    .join{
+        height: 40vh;
+    }
+    .join h4{
+        font-size: .9rem;
+        margin-top: 8%;
+    }
+    .join p{
+        font-size: .8rem;
+        margin-top: 9%;
+    }
+    .ourPartner h5{
+        font-size: .7rem;
+        justify-content: center;
+    }
+    .walletImg img{
+        height: 25vh;
+    }
+}
+
+@media screen and (max-width : 200px) {
+    #main-image{
+        height: 40vh;
+    }
+    #main-image h1{
+        font-size: 1rem;
+        padding-top: 40%;
+    }
+    .presentation .textPresentation h1{
+        font-size: .4rem;
+    }
+    .presentation .textPresentation p{
+        font-size: .6rem;
+    }
+    .presentation img{
+        height: 45vh;
+    }
+    .avantages h2{
+        font-size: 1.1rem;
+        margin-top: 20%;
+    }
+    .avantages .divers{
+        display: inline;
+    }
+    .avantages .divers h3{
+        font-size: .9rem;
+    }
+    .avantages i{
+        font-size: 2.5rem;
+    }
+    .avantages .divers p{
+        font-size: .8rem;
+        margin-right: 2.5%;
+        margin-bottom: 4%;
+    }
+    .join{
+        height: 30vh;
+    }
+    .join h4{
+        font-size: .6rem;
+        margin-top: 6%;
+    }
+    .join p{
+        font-size: .7rem;
+        margin-top: 9%;
+    }
+    .ourPartner h5{
+        font-size: .5rem;
+        justify-content: center;
+    }
+    .walletImg img{
+        height: 20vh;
+        width: 60%;
+    }
+}
+
+
+
+@media screen and (width : 2500px) {
+    #main-image h1{
+        font-size: 7rem;
+        padding-top: 15%;
+    }
+    .presentation .textPresentation h1{
+        font-size: 6rem;
+    }
+    .presentation .textPresentation p{
+        font-size: 5rem;
+    }
+    .avantages h2{
+        font-size: 7rem;
+        margin-top: 20%;
+    }
+    
+    .avantages .divers h3{
+        font-size: 5rem;
+    }
+    .avantages i{
+        font-size: 9rem;
+    }
+    .avantages .divers p{
+        font-size: 4rem;
+        margin-right: 2.5%;
+        margin-bottom: 4%;
+    }
+    .join{
+        height: 90vh;
+    }
+    .join h4{
+        font-size: 5rem;
+        margin-top: 9%;
+    }
+    .join p{
+        font-size: 5rem;
+        margin-top: 4%;
+    }
+    .ourPartner h5{
+        font-size: 5rem;
+        justify-content: center;
+    }
+}
+
