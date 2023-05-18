@@ -185,6 +185,11 @@ button{
         text-align: center;
         background: #092B3A;
     }
+
+    .foot-nSuivre{
+        margin-top: -7px;
+        
+    }
     .footer-info_1 span{
         font-size: 1.2rem;  
     }
