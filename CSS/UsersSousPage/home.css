@@ -1,0 +1,126 @@
+.cadres {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    margin: 0px auto;
+    padding: 20px;
+  }
+  
+  
+  .cadre-elements {
+    width: 200px;
+    border: 1px solid black;
+    border: none;
+    height: auto;
+    border-radius: 1rem;
+    padding: 1rem;
+    background: linear-gradient(to right,#b2ddf3,#d5a3b1);
+  }
+  
+  .img-trans {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .img-trans > img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+  }
+  
+  .cadre-elements p {
+    margin-left: auto;
+    color: white;
+    font-size: 2rem;
+    text-align: right;
+  }
+  .cadre-elements>h3{
+      font-weight: bold;
+      font-size: 1.6rem;
+      color: white;
+  }
+  
+  .tabs{
+      margin: 10px auto;
+      width: 90%;
+  }
+  .name-data{
+      width: 90%;
+      border-bottom: 1px solid black;
+      margin: 40px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px;
+  }
+  .name-data>h3{
+      font-size: 1.7rem;
+      color: #353535;
+  }
+  table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px auto;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #092B3A;
+    color: white;
+  }
+  
+  .total{
+      text-align: center;
+      margin-top: 10px;
+       font-size: 1.6rem;
+  }
+  .gggg {
+    display: flex;
+    width: 60%;
+    justify-content: flex-end;
+    margin: 30px auto;
+    font-size: 1.6rem;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .gggg {
+      width: 90%;
+    }
+  }
+  
+  .imprimer {
+    /* width: 15%; */
+    max-width: 150px;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .imprimer:hover{
+      background-color: cornflowerblue;
+  }
+  
+  .imprimer > img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+  }
+  
+  
+  
+  @media screen and (max-width: 600px) {
+    th, td {
+      padding: 4px;
+    }
+  }
+  
+    
