@@ -180,6 +180,7 @@
     width: 100%;
     height: auto;
     display: none;
+    padding: 0.5rem;
   }
 
   /*AFFICHE 2*/
@@ -193,6 +194,7 @@
     justify-content: center;
     align-items: center;
     display: none;
+    padding: 0.5rem;
   }
   /*AFFICHE 3*/
   .contenaire-elements3{
@@ -205,6 +207,7 @@
     justify-content: center;
     align-items: center;
     display: none;
+    padding: 0.5rem;
   }
   /*AFFICHE 4*/
   .contenaire-elements4{
@@ -215,6 +218,7 @@
     justify-content: center;
     align-items: center;
     display: none;
+    padding: 0.5rem;
   }
   /*AFFICHE 5*/
   .contenaire-elements5{
@@ -225,6 +229,7 @@
     justify-content: center;
     align-items: center;
     display: none;
+    padding: 0.5rem;
   }
 
   /*AFFICHE 6*/
@@ -236,6 +241,7 @@
     justify-content: center;
     align-items: center;
     display: none;
+    padding: 0.5rem;
   }
 
   .active-section{
@@ -289,7 +295,9 @@
     }
     
     .sous-menu nav ul li {
-    padding: 10px 20px;
+     padding: 10px 20px;
     }
-    }
+}
+
+
 

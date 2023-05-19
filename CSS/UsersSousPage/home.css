@@ -5,7 +5,7 @@
     width: 50%;
     height: auto;
     margin: 0px auto;
-    padding: 20px;
+    padding: 10px;
   }
   
   
@@ -15,7 +15,7 @@
     border: none;
     height: auto;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 0.3rem;
     background: linear-gradient(to right,#b2ddf3,#d5a3b1);
   }
   
@@ -33,7 +33,7 @@
   .cadre-elements p {
     margin-left: auto;
     color: white;
-    font-size: 2rem;
+    font-size: 1.6rem;
     text-align: right;
   }
   .cadre-elements>h3{
@@ -80,6 +80,7 @@
       text-align: center;
       margin-top: 10px;
        font-size: 1.6rem;
+       font-weight: bold;
   }
   .gggg {
     display: flex;
@@ -121,6 +122,34 @@
     th, td {
       padding: 4px;
     }
+    .cadre-elements p {
+      font-size: 1rem;
+    }
+    .cadre-elements>h3{
+        font-size: 1rem;
+    }
+    table {
+      width: 90%;
+      border-collapse: collapse;
+      margin: 20px auto;
+    }
+    
+    th, td {
+      padding: 0.3rem;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .total{
+        text-align: center;
+        margin-top: 7px;
+        font-size: 1rem;
+        font-weight: bold;
+    
+    }
+    
+      
+
+
   }
   
-    

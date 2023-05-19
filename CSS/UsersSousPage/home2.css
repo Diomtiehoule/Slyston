@@ -25,8 +25,12 @@
 .name-content>input{
   width: 100%;
   height: auto;
-  padding: 5px;
   outline: none;
+  border-radius: 8px;
+  padding: 7px 16px;
+  box-shadow: rgba(77, 79, 82, 0.2) 0px 8px 24px;
+  border: 2px solid rgb(184, 180, 180);
+  font-size: 1rem;
 }
 label{
     display: block;

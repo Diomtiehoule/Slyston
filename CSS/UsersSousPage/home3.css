@@ -4,6 +4,9 @@
     margin-bottom: 10px;
     /* margin: 50px auto 10px; */
     /* border: 1px solid black; */
+    background: whitesmoke;
+    transition: 0.2s linear;
+    box-shadow: 1px 1px 10px lightslategray;
     
 }
 .section5 .name-data{
@@ -40,9 +43,13 @@ color: #353535;
 }
 .name-content .inputs{
     width: 100%;
-    height: auto;
-    padding: 5px;
-    outline: none;
+  height: auto;
+  outline: none;
+  border-radius: 8px;
+  padding: 7px 16px;
+  box-shadow: rgba(77, 79, 82, 0.2) 0px 8px 24px;
+  border: 2px solid rgb(184, 180, 180);
+  font-size: 1rem;
 }
 .name-content-choix{
     display: flex;
@@ -60,14 +67,22 @@ color: #353535;
 }
 #sexe{
     height: auto;
-    padding: 5px;
     outline: none;
+  border-radius: 8px;
+  padding: 7px 16px;
+  box-shadow: rgba(77, 79, 82, 0.2) 0px 8px 24px;
+  border: 2px solid rgb(184, 180, 180);
+  font-size: 1rem;
 }
 .name-content-choix #Contact{
     width: 100%;
     height: auto;
-    padding: 5px;
     outline: none;
+    border-radius: 8px;
+    padding: 7px 16px;
+    box-shadow: rgba(77, 79, 82, 0.2) 0px 8px 24px;
+    border: 2px solid rgb(184, 180, 180);
+    font-size: 1rem;
 }
 label{
     display: block;
