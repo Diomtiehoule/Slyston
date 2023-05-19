@@ -1,0 +1,50 @@
+.section3{
+    width: 60%;
+    height: auto;
+    /* border: 1px solid black; */
+    margin: 40px auto;
+}
+
+.section3 .name-data{
+    width: 80%;
+    border-bottom: 1px solid black;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+ }
+ .section3 .name-lastname{
+    width: 80%;
+    height: auto;
+    display: block;
+    align-items: center;
+    margin: 10px auto;
+    padding-bottom: 30px;
+}
+.name-content>input{
+  width: 100%;
+  height: auto;
+  outline: none;
+  border-radius: 8px;
+  padding: 7px 16px;
+  box-shadow: rgba(77, 79, 82, 0.2) 0px 8px 24px;
+  border: 2px solid rgb(184, 180, 180);
+  font-size: 1rem;
+}
+label{
+    display: block;
+    padding: 5px;
+}
+.btn-save{
+    width: 30%;
+    height: auto;
+}
+.save2{
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    color: #C7C7C7;
+    border-radius: 5px;
+    background-color: #000000;
+}

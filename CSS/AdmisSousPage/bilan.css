@@ -1,0 +1,135 @@
+.contenaire-elements2 .name-data {
+    width: 50%;
+    border-bottom: 1px solid black;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+  }
+  
+  .name-data > h3 {
+    font-size: 1.7rem;
+    /* color: #353535; */
+    color: white;
+    text-shadow: 2px 2px 4px #000000 ;
+  }
+  
+  .name-data > img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .card-bilan {
+    margin-left: 40px;
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+  
+  .bilan-el {
+    width: 130px;
+    height: 80px;
+    background: whitesmoke;
+    transition: 0.2s linear;
+    box-shadow: 1px 1px 10px lightslategray;
+    cursor: default;
+    margin-right: 20px;
+    border-radius: 10px;
+  }
+  
+  .bilan-el > p {
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .bilan-level {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+  }
+  #bas{
+      color: red;
+  }
+  #haut{
+      color:#1A2B88;
+  }
+  
+  .bilan-level img {
+    padding: 5px;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    font-size: 0.8rem;
+    padding: auto;
+    margin: 0px auto;
+  }
+  
+  .bilan-el .element > h4 {
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .bilan-el > p {
+    text-align: center;
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 1rem;
+    color: #1A2B88;
+  }
+  
+  /* Graphe */
+  
+  .graphe-bilan {
+    margin-left: 40px;
+    margin-top: 30px;
+    width: 50%;
+    height: 450px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+  }
+  
+  #myChart {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive changes */
+  
+  @media screen and (max-width: 768px) {
+    .contenaire-elements .name-data {
+      width: 80%;
+    }
+    
+    .card-bilan {
+      flex-wrap: wrap;
+      width: 90%;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .bilan-el {
+      margin-bottom: 20px;
+    }
+    
+    .graphe-bilan {
+      max-width: 90%;
+    }
+  }
+  
