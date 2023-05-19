@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/inscription.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+
     <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
     <title>Document</title>
 </head>
@@ -14,27 +16,39 @@
     
     <div class="container">
         <div class="image">
-            <img src="../Ressources/IMAGES/istockphoto-640267784-612x612.jpg" alt="image de banque">
+            <img src="../IMAGES/istockphoto-640267784-612x612.jpg" alt="image de banque">
         </div>
 
         <div class="form-inscription">
             <i class="fa-solid fa-circle-user"></i>
 
+            <div class="nameInscription">
+                <label for="user_name">Nom  utilisateur</label>
+                <div class="input"><input type="text" id="user_name_inscription" name="name" placeholder="Entrez votre Nom"><i class="fa-solid fa-user"></i></div>
+                
+                </div>
+
+                <div class="prenomInscription">
+                    <label for="user_prenom">Prenom</label>
+                    <div class="input"><input type="text" id="user_prenom_inscription" name="prenom" placeholder="Entrez votre prenom"><i class="fa-solid fa-user"></i></div>
+                    
+                    </div>
+
             <div class="EmailInscription">
             <label for="user_email">Adresse e-mail</label>
-            <div class="input"><input type="email" id="user_mail_inscription" name="mail"><i class="fa-solid fa-user"></i></div>
+            <div class="input"><input type="email" id="user_mail_inscription" name="mail" placeholder="Entrez votre email"><i class="fa-solid fa-user"></i></div>
             
             </div>
 
             <div class="Password_inscription">
                 <label for="user_password_inscription">Mot de passe</label>
-                <div class="input"><input type="password" id="user_password_inscription" name="Password"><i class="fa-solid fa-lock"></i></div>
+                <div class="input"><input type="password" id="user_password_inscription" name="Password" placeholder="Entrez votre mot de passe"><i class="fa-solid fa-lock"></i></div>
                 </div>
         
 
         <div class="Email_confirme_inscription">
             <label for="user_passwordConfirme">Confirmez votre mot de passe</label>
-            <div class="input"><input type="password" id="user_passwordConfirme_inscription" name="Email_confirme"><i class="fa-solid fa-lock"></i></div>
+            <div class="input"><input type="password" id="user_passwordConfirme_inscription" name="Email_confirme" placeholder="Confirmez votre mot de passe"><i class="fa-solid fa-lock"></i></div>
             </div>
 
             <a href="../HTML/connexion.html"><button id="submit_inscription">inscription</button></a>
@@ -50,7 +64,30 @@
     <script src="auth.js/firebase-firestore.js"></script> -->
 
 
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCfVY0ZgXyyxFzG1yGdolJ0TNj_8JhV2KQ",
+          authDomain: "slystonbank.firebaseapp.com",
+          projectId: "slystonbank",
+          storageBucket: "slystonbank.appspot.com",
+          messagingSenderId: "225846274598",
+          appId: "1:225846274598:web:658cf49ecfd602747014e7",
+          measurementId: "G-NB2646C4EM"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
 
+        const auth = firebase.auth();
+
+      </script>
     <script src="../JS/auth.js"></script>
     <script src="../Controllers/Users/signUser.js" type="module"></script>
 </body>
