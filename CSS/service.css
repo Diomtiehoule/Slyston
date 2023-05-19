@@ -1,0 +1,13 @@
+.head-serv {
+  width: 100%;
+  height: 22vh;
+  object-fit: cover;
+  background-color: aqua;
+  background-image: url("../Ressources/IMAGES/noire.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.head-serv h4 {
+  padding: -20px;
+}
