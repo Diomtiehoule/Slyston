@@ -17,13 +17,59 @@ const formInscription = document.querySelector('.form-inscription');
 const formConnexion = document.querySelector('.form-connexion');
 
 
+// formInscription.addEventListener('submit', (e)=>{
+
+//   e.preventDefault();
+//   const EmailInscriptionValeur = EmailInscription.value;
+//   const mdpInscriptionValeur = mdpInscription.value;
+
+
+//   const auth = getAuth();
+
+//   auth.createUserWithEmailAndPassword(EmailInscriptionValeur,mdpInscriptionValeur).then(cred =>{
+//     console.log('inscription effecuter');
+//   })
+// })
+
+
+
+
+
+
+// const auth = getAuth();
+// createUserWithEmailAndPassword(auth, email, password)
+//   .then((userCredential) => {
+//     // Signed in 
+//     const user = userCredential.user;
+//     // ...
+//   })
+//   .catch((error) => {
+//     const errorCode = error.code;
+//     const errorMessage = error.message;
+//     // ..
+//   });
+
+
+
+
 formInscription.addEventListener('submit', (e)=>{
 
   e.preventDefault();
   const EmailInscriptionValeur = EmailInscription.value;
   const mdpInscriptionValeur = mdpInscription.value;
 
-  app.createUserWithEmailAndPassword(EmailInscriptionValeur,mdpInscriptionValeur).then(cred =>{
-    console.log('inscription effecuter');
+    // const auth = getAuth();
+    auth.createUserWithEmailAndPassword(EmailInscriptionValeur,mdpInscriptionValeur)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    // ...
   })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // ..
+  });
+
+  console.log('bonjour')
 })

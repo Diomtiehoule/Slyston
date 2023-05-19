@@ -6,35 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/inscription.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+
     <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
     <title>Document</title>
 </head>
 <body>
     
     <div class="container">
-        <div class="image">
+        <!-- <div class="image">
             <img src="../IMAGES/istockphoto-640267784-612x612.jpg" alt="image de banque">
-        </div>
+        </div> -->
 
         <div class="form-inscription">
             <i class="fa-solid fa-circle-user"></i>
 
+            <div class="nameInscription">
+                <label for="user_name">Nom  utilisateur</label>
+                <div class="input"><input type="text" id="user_name_inscription" name="name" placeholder="Entrez votre Nom"><i class="fa-solid fa-user"></i></div>
+                
+                </div>
+
+                <div class="prenomInscription">
+                    <label for="user_prenom">Prenom</label>
+                    <div class="input"><input type="text" id="user_prenom_inscription" name="prenom" placeholder="Entrez votre prenom"><i class="fa-solid fa-user"></i></div>
+                    
+                    </div>
+
             <div class="EmailInscription">
             <label for="user_email">Adresse e-mail</label>
-            <div class="input"><input type="email" id="user_mail_inscription" name="mail"><i class="fa-solid fa-user"></i></div>
+            <div class="input"><input type="email" id="user_mail_inscription" name="mail" placeholder="Entrez votre email"><i class="fa-solid fa-user"></i></div>
             
             </div>
 
             <div class="Password_inscription">
                 <label for="user_password_inscription">Mot de passe</label>
-                <div class="input"><input type="password" id="user_password_inscription" name="Password"><i class="fa-solid fa-lock"></i></div>
+                <div class="input"><input type="password" id="user_password_inscription" name="Password" placeholder="Entrez votre mot de passe"><i class="fa-solid fa-lock"></i></div>
                 </div>
         
 
         <div class="Email_confirme_inscription">
             <label for="user_passwordConfirme">Confirmez votre mot de passe</label>
-            <div class="input"><input type="password" id="user_passwordConfirme_inscription" name="Email_confirme"><i class="fa-solid fa-lock"></i></div>
+            <div class="input"><input type="password" id="user_passwordConfirme_inscription" name="Email_confirme" placeholder="Confirmez votre mot de passe"><i class="fa-solid fa-lock"></i></div>
             </div>
 
             <a href="../HTML/connexion.html"><button id="submit_inscription">inscription</button></a>
@@ -55,6 +69,9 @@
     <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+
+        import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+        
         // TODO: Add SDKs for Firebase products that you want to use
         // https://firebase.google.com/docs/web/setup#available-libraries
       
@@ -74,6 +91,13 @@
         const app = initializeApp(firebaseConfig);
 
         const auth = firebase.auth();
+
+//  const EmailInscription = document.querySelector('#user_mail_inscription');
+// const mdpInscription = document.querySelector('#user_password_inscription');
+// const verifMdpInscription = document.querySelector('#user_passwordConfirme_inscription');
+// const btnInscription = document.querySelector('#submit_inscription');
+
+
 
       </script>
     <script src="../JS/auth.js"></script>
