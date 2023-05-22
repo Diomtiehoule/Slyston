@@ -1,3 +1,6 @@
+/* body{
+  background: rgb(236, 227, 227);
+} */
 .head-serv {
   width: 100%;
   height: 22vh;
@@ -8,6 +11,58 @@
   background-size: cover;
   background-position: center center;
 }
-.head-serv h4 {
-  padding: -20px;
+.head-serv h4, p{
+  color: #fff;
+  text-align: center;
+  margin-left: -20px;
 }
+.head-serv h4 {
+  font-size: 1.5rem;
+  margin-bottom: -8px;
+    padding: 19px;
+  
+}
+.head-serv p{
+  font-size: 1.2rem;
+}
+
+.info-serv h4{
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 19px;
+}
+.info-serv p{
+  color: black;
+}
+.cartes-infos{
+  background-color: aqua;
+  display: flex;
+  padding: 20px;
+  
+}
+
+.carte-s{
+ display: flex;
+ gap: 10px;
+ flex-wrap: wrap;
+}
+.cart-e{
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  background-color:rgb(120, 33, 33);
+  box-shadow: 3px 3px 3px 3px #fff;
+  
+}
+.cart-e img{
+  width: 100%;
+  height: 300px;
+}
+.cart-e p{
+  color: black;
+  padding: 21px;
+  text-align: center;
+}
+
+
+
