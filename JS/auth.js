@@ -73,3 +73,42 @@ formInscription.addEventListener('submit', (e)=>{
 
   console.log('bonjour')
 })
+
+
+
+
+
+// formulaire  d'inscription et de connexion des utilisateurs
+
+const wrapper = document.querySelector('.wrapper');
+const loginlink = document.querySelector('.login-link');
+const registerlink = document.querySelector('.register-link');
+const buttonlogin = document.querySelector('.btnPopup');
+const buttoncloselogin = document.querySelector('.icon-close');
+const HomePage = document.querySelector('.home');
+let nom = document.querySelector('.Username');
+let mail = document.querySelector('.email');
+let motCle = document.querySelector('.password');
+
+registerlink.addEventListener('click', ()=>{
+
+    wrapper.classList.add('active');
+});
+
+loginlink.addEventListener('click', ()=>{
+    wrapper.classList.remove('active');
+});
+
+buttonlogin.addEventListener('click', ()=>{
+    wrapper.classList.add('active-popup');
+    HomePage.classList.remove('here');
+});
+
+buttoncloselogin.addEventListener('click', ()=>{
+    wrapper.classList.remove('active-popup');
+    HomePage.classList.add('active-popup');
+});
+
+HomePage.addEventListener('click', ()=>{
+    wrapper.classList.remove('active-popup');
+});

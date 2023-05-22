@@ -22,9 +22,10 @@ a:hover{
     color: blue;
 }
 
+
 /* FORMULAIRE POUR L'INSCRIPTION DES UTILISATEURS */
 .container{
-    margin-left: 12%;
+    margin: 0 auto;
     margin-top: 5%;
     display: flex;
 }
@@ -36,6 +37,7 @@ a:hover{
     background-color: white;
     width: 25%;
     height: 80vh;
+    margin: 0 auto;
 }
 .form-connexion i:nth-child(1){
     font-size: 5rem;

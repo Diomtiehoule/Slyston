@@ -14,6 +14,9 @@ input{
     width: 75%;
     margin-top: 3%;
 }
+label{
+    
+}
 input:focus-within{
     border: none;
 }
@@ -27,7 +30,7 @@ a:hover{
 
 /* FORMULAIRE POUR L'INSCRIPTION DES UTILISATEURS */
 .container{
-    margin-left: 12%;
+    margin: 0 auto;
     padding-top: 2%;
     display: flex;
 }
@@ -37,7 +40,7 @@ a:hover{
 }
 .form-inscription{
     background-color: white;
-    width: 40%;
+    width: 25%;
     height: 90vh;
     margin: 0 auto;
 }
