@@ -26,4 +26,4 @@ const changeSlide = (offset) => {
   delete activeCircle.dataset.activeSlide;
 };
 
-setInterval(changeSlide.bind(null, 1), 6000);
+// setInterval(changeSlide.bind(null, 1), 6000);
