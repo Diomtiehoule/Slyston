@@ -86,3 +86,5 @@ menuBtn[7].addEventListener('click', () => {
     allCadres[0].classList.remove('active-section');
 });
 
+
+

@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
   }
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
   
   /* Styles généraux du corps du document */
   body {
@@ -13,15 +14,16 @@
     background: #f5f5fa;
     font-size: 16px;
     line-height: 1.2;
-    font-family: "Open Sans", Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 
   }
   
   /* Conteneur global du tableau de bord */
   .block-dashboard {
     width: 100%;
-    height: 100vh;
+    height: auto;
     object-fit: cover;
+    position: relative;
   }
   
   /* En-tête du tableau de bord */
@@ -85,7 +87,7 @@
   
   /* Menu du tableau de bord */
   .menu-dashboard {
-    width: 15%;
+    width: 200px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -391,4 +393,64 @@
 
 
   }
+  /* Media queries pour la responsivité */
+  
+  @media screen and (max-width: 509px) {
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin: 10px auto;
+    }
+    
+    th{
+      padding: 0.1rem;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    td {
+      padding: auto;
+      font-size: auto;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    .cadres{
+      width: 100%;
+    }
+    .cadre-elements p {
+      font-size: 1rem;
+    }
+    
+    .cadre-elements > h3 {
+      font-size: 1rem;
+    }
+    .menu-dashboard{
+      height: 100vh;
+    }
+  }
+@media screen and (max-width: 619px) {
+.block-dashboard {
+border: none;
+}
+.menu-dashboard {
+  position: absolute;
+  width: 250px;
+  height: 100%;
+  z-index: 3;
+  opacity: 0.8;
+  display: none;
+  color: #fffff1;
+} 
+  /* BTN RESPONSIBLE */
+  .active-menu{
+    display: flex;
+  }
+}
+
+
+
+
+
+
+
+
   
