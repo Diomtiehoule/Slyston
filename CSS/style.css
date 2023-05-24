@@ -1,27 +1,5 @@
-/* main sild */
-
-/* .slid{
-    width: 100%;
-    height: 100vh;
-    /* justify-content: center;
-    align-items: center;
-    top: 0; */
-/* }
-
-.cont-slid{
-    position: relative;
-   
-
-}  */
-
 /*carousel*/
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 :root {
   --unhover-border-color: rgba(0, 0, 0, 0.5);
@@ -44,7 +22,6 @@
 
 .slide h5{
  text-align: center;
-
   margin-top: 10%;
   margin-left: 7%;
   position: absolute;
@@ -52,15 +29,16 @@
   color: #fff;
   width: 40%;
 }
-.slide span{
-  padding-top: 10px;
+.slid_span{
+  padding-top: 8px;
+  padding-left: 2%;
   position: absolute;
   font-size: 1rem;
-  height: 50px;
-  width: 120px;
+  height: 40px;
+  width: 150px;
   color: #fff;
   background-color: #092B3A;
-  margin-top: 20%;
+  margin-top: 26%;
   margin-left: 20%;
   border: 2px solid #eed620;
   border-radius: 10px;
@@ -154,6 +132,12 @@ li.slide[data-active-slide] {
 .slides-circles > div[data-active-slide] {
   background-color: white;
 }
+
+.compts{
+  margin-top: -15%;
+  position: absolute;
+  display: flex;
+}
 /*section2*/
 .carte-acc {
   display: flex;
@@ -163,19 +147,26 @@ li.slide[data-active-slide] {
   margin-top: 10px;
   flex-wrap: wrap;
 }
+.compt-client a{
+  color: #000;
+}
+
 .inff-serv{
+  margin-top: -10%;
   display: flex;
   text-align: center;
   justify-content: space-around;
 }
-/* .aid-span span{
-  /* background-color: darkslategray;
-  height: 50px;
-  width: 50px;
+.aid-span .aide{
+  background-color: darkslategray;
+  height: 10px;
+  width: 100%;
   border-radius: 100px; 
   
-} */
-
+}
+.logo{
+  color: #eed620;
+}
 .aid-span a{
   color: black;
   font-size: 20px;
@@ -183,57 +174,84 @@ li.slide[data-active-slide] {
 .aid-span.aide{
   height: 500px;
   width: 400px;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 }
 
 .form-acc {
-  height: 500px;
-  width: 400px;
+  height: 400px;
+  width: 300px;
   background: #fff;
-  box-shadow: 4px 3px 3px 3px rgb(238, 235, 235);
+  box-shadow: 4px 3px 3px 3px rgba(194, 188, 188, 0.985);
   cursor: pointer;
 }
 .form-acc h4 {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.6rem;
   position: absolute;
-  margin-top: 7%;
-  margin-left: 4%;
+  margin-top: 12%;
+  margin-left: 2%;
 }
+
 .form-acc img{
   height: 300px;
   width: 100%;
+  opacity: 1;
 }
-.form-acc a{
-  color: #000;
+.form-acc p{
+  font-size: 1.2rem;
+}
+.btn_plus{
+  height: 30px;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 4%;
+  padding: 0 auto;
+  background-color: #092B3A;
+}
+
+.btn_plus a{
+  color: #eed620;
+  margin: 0 auto;
+  
 }
 .dec-puce {
-  padding: 20px;
-  gap: 20px;
-  background-color: aqua;
+ justify-content: center;
+  /* background-color: aqua; */
   display: flex;
+  margin-bottom: 5%;
 }
+
 .bloc-texte{
-  height:400px;
-  width: 500px;
-  background: #000;
+  position: absolute;
+  height:300px;
+  width: 300px;
+  margin-left: 5%;
+  background:#fff;
+  box-shadow: 3px 4px  rgba(214, 210, 210, 0.977);
+  /* border: 1px solid #000; */
+
 }
+
 .bloc-texte p{
-  color: #fff;
+  font-size: 2rem;
+  margin-top: 25%;
+  margin-left: 10%;
+  color: rgb(3, 2, 2);
   position: absolute;
 }
 
 .form-puce {
-  height: 400px;
-  width: 400px;
-  background-color: aquamarine;
+  height: 300px;
+  width: 500px;
+  /* background-color: aquamarine; */
 }
 .form-puce img{
   width: 100%;
+  height: 300px;
 }
 .bgran-security{
   height: 600px;
-  width: 1440px;
+  width: 100%;
   margin-top: 20px;
   margin: 0 auto;
   background-color: #fff;
@@ -241,15 +259,35 @@ li.slide[data-active-slide] {
 }
 .op-security{
   height: 300px;
-  width: 1440px;
+  width: 100%;
   background-color: #000;
 }
 .op-security img{
   width: 100%;
   height: 300px;
+  opacity: 0.2;
 }
 
-.op-security h4{
+.op-security h2{
   position: absolute;
-  align-items: center;
+  margin-top: 10%;
+  margin-left: 20%;
+  color: #fff;
+  font-size: 2rem;
+}
+.icons-op{
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  gap: 20%;
+}
+.icon-op h4{
+  padding-top: -10%;
+  font-size: 1.5rem;
+}
+.icon-op img{
+  margin-top: 30%;
+  width: 80px;
+  border-radius: 100%;
+  border: 4px solid #eed620;
 }

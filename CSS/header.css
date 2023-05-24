@@ -6,9 +6,12 @@
 
 
 header{
-    background: #092B3A;
+    width: 100%;
     height: 12vh;
-    padding-top: 12px;
+    padding-top: 10px;
+    position: fixed;
+    background: #092B3A;
+    z-index: 100;
 }
 li{
     list-style: none;
@@ -28,7 +31,7 @@ a{
 .nav-menu{
     display: flex;
     font-size: 1.3rem;
-    padding-top: 13px;
+    padding-top: 10px;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
@@ -58,8 +61,8 @@ a{
 /**********************************/
 /* footer */
 .footer{
-    height: 50vh;
-    margin-top: 100%;
+    height: 50vh; 
+     margin-top: 20%;
     color: #fff;
     background: #092B3A;
 }
@@ -152,7 +155,7 @@ button{
 }
 @media screen and (max-width:480px){
     .footer{
-        height: 70vh;
+        /* height: 70vh; */
         color: #fff;
         text-align: center;
         background: #092B3A;
@@ -180,7 +183,7 @@ button{
 }
 @media screen and (max-width:375px){
     .footer{
-        height: 90vh;
+        /* height: 90vh; */
         color: #fff;
         text-align: center;
         background: #092B3A;
