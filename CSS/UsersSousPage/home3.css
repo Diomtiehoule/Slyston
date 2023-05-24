@@ -1,3 +1,4 @@
+/* DEPOT STYLE */
 .section5{
     width: 60%;
     height: auto;
@@ -36,12 +37,19 @@ color: #353535;
     height: auto;
     justify-content: space-around;
 }
-.user-trans-block .name-content{
+.user-trans-block .name-content1{
     width: 90%;
     height: 100%;
     display: block;
 }
-.name-content .inputs{
+/* desactiver */
+.user-trans-block .name-content_depot{
+    width: 90%;
+    height: 100%;
+    /* display: block; */
+    display: none;
+}
+.name-content_depot .inputs{
     width: 100%;
   height: auto;
   outline: none;
@@ -51,10 +59,23 @@ color: #353535;
   border: 2px solid rgb(184, 180, 180);
   font-size: 1rem;
 }
+.name-content1 .inputs{
+    width: 100%;
+  height: auto;
+  outline: none;
+  border-radius: 8px;
+  padding: 7px 16px;
+  box-shadow: rgba(77, 79, 82, 0.2) 0px 8px 24px;
+  border: 2px solid rgb(184, 180, 180);
+  font-size: 1rem;
+}
+
+/* desactiver */
 .name-content-choix{
-    display: flex;
+    /* display: flex; */
     width: 90%;
     height: 100%;
+    display: none;
 }
 .content-two1{
     width: 100%;
@@ -88,13 +109,14 @@ label{
     display: block;
     padding: 5px;
 }
-.infos-user-trans .profit-image{
+/* desactiver */
+.infos-user-trans .profit-image_depot{
     width: 50%;
     height: auto;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     padding: 30px;
-    /* align-items: center; */
+    display: none;
 }
 .card-img{
  width: 100%;
@@ -117,3 +139,19 @@ label{
     border-radius: 5px;
     background-color: #000000;
 }
+
+@media screen and (max-width: 619px) {
+    .section5 {
+        width: 100%;
+      
+    }
+}
+
+.trans-active-block{
+    display: block;
+  }
+  .trans-active-flex{
+    display: flex;
+  }
+
+
