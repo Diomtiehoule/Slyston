@@ -29,3 +29,4 @@ const userCollection=collection(db, 'users')
 
 
 export {db, auth, userCollection,createUserWithEmailAndPassword,addDoc,signInWithEmailAndPassword,getDocs,updateDoc, doc}
+

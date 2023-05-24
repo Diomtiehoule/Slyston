@@ -1,4 +1,4 @@
-import { auth, signInWithEmailAndPassword, getDocs, userCollection } from "../../DB/config.js";
+import { auth, signInWithEmailAndPassword, getDocs, userCollection} from "../../DB/config.js";
 
 const password = document.querySelector("#user_password_connexion");
 const email = document.querySelector("#user_mail_connexion");
@@ -72,3 +72,5 @@ function testRedirection(data, mail, motPass) {
     }
     return null;
 }
+
+

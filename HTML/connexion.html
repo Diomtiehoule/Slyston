@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/connexion.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Document</title>
+    <title>Slyston</title>
 </head>
 <body>
     
     <div class="container">
+       
+        <!-- <div class="image">
+        <img src="../Ressources/IMAGES/authen.jpg" alt="">
+    </div> -->
         <div class="form-connexion">
+            
             <i class="fa-solid fa-circle-user"></i>
-
             <div class="EmailConnexion">
             <label for="user_email">Adresse e-mail</label>
             <div class="input"><input type="email" id="user_mail_connexion" name="mail" placeholder="Entrez votre email"><i class="fa-solid fa-user"></i></div>
@@ -25,20 +29,18 @@
                 <div class="input"><input type="password" id="user_password_connexion" name="Password" placeholder="Entrez votre mot de passe"><i class="fa-solid fa-lock"></i></div>
                 </div>
 
+                <div class="helpConnexion">
+                <!-- <div style="display: flex;"><input type="checkbox">
+                    <p>Se souvenir de moi</p></div> -->
+
+                <p>Mot de passe oublié ?</p>
+                </div>
              <button id="submit_connexion">Connexion</button>
 
-            <p style="text-align: center; margin-top: 2%;">Ou</p>
-            <div class="facebook">
-                <i class="fa-brands fa-facebook"></i><p>Connectez-vous avec facebook</p>
-                
-            </div>
+            <p style="text-align: center; margin-top: 2%;font-size: 1.2rem;">Ou</p>
+            <a href="../HTML/inscription.html"><button class="inscriptionLink">inscrivez-vous</button></a>
 
-            <div class="google">
-                <i class="fa-brands fa-google"></i>
-                <p>Connectez-vous avec google</p>
-            </div>
-
-            <p style="font-size: .9rem; justify-content: center;align-items: center;display: flex;">Vous avez n'avez pas de compte ?<a href="../HTML/inscription.html">inscrivez-vous</a></p>
+            <!-- <p style="font-size: .9rem; justify-content: center;align-items: center;display: flex;">Vous avez n'avez pas de compte ?<a href="../HTML/inscription.html">inscrivez-vous</a></p> -->
         </form>
 
        

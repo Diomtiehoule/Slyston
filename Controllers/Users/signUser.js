@@ -43,9 +43,11 @@ btn_form.addEventListener('click',(e)=>{
         createUser(user)
         form.reset();
     }else{
-        alert("password!!!")
+        swal("Veuillez entrer des mots de passe conforme");
     }
-   
+   if(!user.nom||!user.prenom || !user.email|| !user.password){
+    swal("Inscription impossible", "Veuillez remplir tout le formulaire !", "error");
+   }
 
 })
 
@@ -55,8 +57,19 @@ async function createUser(user){
     console.log("user",user.email,user.password)
     await createUserWithEmailAndPassword(auth, user.email,user.password)
         const data= await addDoc(userCollection, user);
-        data ? alert("Compte créé avec succès !")  : console.log('Erreur !!!!');
+        // data ?swal("Félicitation !", "Votre inscription a été éffectuer avec succes !", "success"):swal("Désolé", "Impossible de vous inscrire !", "error");
+    if(data){
+        swal("Félicitation !", "Votre inscription a été éffectuer avec succes !", "success")
+
+        window.location.href="../HTML/connexion.html"
+    }else{
+        swal("Désolé", "Impossible de vous inscrire !", "error");
+    }
        
 }
 
 
+
+
+
+//  autre methode d'inscription
