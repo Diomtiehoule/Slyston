@@ -1,3 +1,5 @@
+/* MESSAGE STYLE */
+
 .section4{
     width: 60%;
     height: auto;
@@ -51,6 +53,9 @@ color: #353535;
     justify-content: center;
     align-items: center;
 }
+.liste-message>h4{
+    font-size: 0.8rem;
+}
 .img-picture{
 width: 30px;
 height: 30px;
@@ -68,9 +73,22 @@ background-color: #d9d9d9;
 
 .Supprimer{
     display: block;
-    margin: 10px auto;
+    margin: 15px auto;
     padding: 8px;
     color: #C7C7C7;
     border-radius: 5px;
     background-color: #000000;
+}
+
+@media screen and (max-width: 619px) {
+    .section4 {
+        width: 100%;
+      
+    }
+}
+
+@media screen and (max-width: 273px) {
+    .content-listes>p{
+        font-size: 0.6rem;
+    }
 }

@@ -1,6 +1,9 @@
+/* PARAMETRES STYLES */
+
 .section1 {
     width: 60%;
     height: auto;
+    margin-top: 50px;
     margin-bottom: 10px;
     background: whitesmoke;
     transition: 0.2s linear;
@@ -68,15 +71,27 @@
     align-items: center;
     margin: 10px auto;
 }
+.name-lastname1 {
+    width: 30%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+}
 
 .name-content {
     width: 50%;
     height: 100%;
     display: block;
 }
+.name-lastname1 .name-content {
+    width: 50%;
+    height: 100%;
+    display: block;
+}
 
-.name-content > input {
-    width: 80%;
+.name-content > select{
+    width: 100%;
     height: auto;
     outline: none;
     border-radius: 8px;
@@ -85,8 +100,8 @@
     border: 2px solid rgb(184, 180, 180);
     font-size: 1rem;
 }
-.name-content > select{
-    width: auto;
+.name-content > #age{
+    width: 100%;
     height: auto;
     outline: none;
     border-radius: 8px;
@@ -178,11 +193,28 @@ label {
     border-radius: 5px;
     background-color: #000000;
 }
+.miseajour1{
+    width: 100px;
+    height: auto;
+    display: block;
+    margin-top: 27px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    color: #c7c7c7;
+    border-radius: 5px;
+    background-color: #000000; 
+}
 
 @media screen and (max-width: 600px) {
     /* Styles for screens with a maximum width of 600px */
-    .section1,
+    
     .section2 {
+        width: 100%;
+      
+    }
+    .section1{
+        margin-top: 120px;
         width: 100%;
     }
 
@@ -200,3 +232,26 @@ label {
         width: 100%;
     }
 }
+@media screen and (max-width: 637px){
+    .section2 {
+        width: 100%;
+      
+    }
+    .section1{
+        margin-top: 120px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 295px){
+    .section2 {
+        width: 100%;
+      
+    }
+    .section1{
+        margin-top: 170px;
+        width: 100%;
+    }
+}
+
+
+

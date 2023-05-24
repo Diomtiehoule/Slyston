@@ -200,6 +200,7 @@
     align-items: center;
     display: none;
     padding: 0.5rem;
+    overflow-y: scroll;
   }
   /*AFFICHE 3*/
   .contenaire-elements3{
@@ -325,6 +326,7 @@
       display: flex;
     }
 }
+
 
 
 
