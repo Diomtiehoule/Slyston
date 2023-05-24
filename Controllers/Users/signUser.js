@@ -81,11 +81,7 @@ btn_form.addEventListener('click',(e)=>{
         createUser(user)
         form.reset();
     }else{
-<<<<<<< HEAD
         swal("Veuillez entrer des mots de passe conforme");
-=======
-        alert("password !!!")
->>>>>>> 38a9bdbb8676f9692be37c7d7f1edae723f4cee5
     }
    if(!user.nom||!user.prenom || !user.email|| !user.password){
     swal("Inscription impossible", "Veuillez remplir tout le formulaire !", "error");
