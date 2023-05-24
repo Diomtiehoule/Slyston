@@ -5,6 +5,12 @@
 }
 body{
     background-color: #092B3A;
+    background-image: url("../Ressources/IMAGES/istockphoto-640267784-612x612.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
 }
 input{
     height: 4vh;
@@ -13,6 +19,7 @@ input{
     border-bottom: 2px solid black;
     width: 75%;
     margin-top: 5%;
+    font-size: 1rem;
 }
 a{
     text-decoration: none;
@@ -22,55 +29,113 @@ a:hover{
     color: blue;
 }
 
+
 /* FORMULAIRE POUR L'INSCRIPTION DES UTILISATEURS */
 .container{
-    margin-left: 12%;
+    margin: 0 auto;
     margin-top: 5%;
     display: flex;
+}
+.container .form-connexion .close_form{
+    width: 20%;
+    height: 2vh;
+    color: #092B3A;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 .container .image img{
     height: 80vh;
     margin: 0 auto;
 }
 .form-connexion{
-    background-color: white;
-    width: 25%;
+    background-color: rgba(225, 225, 225, 0.6);
+    width: 35%;
+    border-radius: 5%;
     height: 80vh;
+    margin: 0 auto;
 }
 .form-connexion i:nth-child(1){
     font-size: 5rem;
     justify-content: center;
     align-items: center;
     display: flex;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
     margin-top: 4%;
+}
+.form-connexion i{
+    font-size: 1.3rem;
+}
+label{
+    font-size: 1.1rem;
 }
 .form-connexion .EmailConnexion i, .form-connexion .PasswordConnexion i{
     margin-left: 3%;
 }
 .form-connexion .EmailConnexion{
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 .form-connexion .PasswordConnexion{
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 .EmailConnexion ,.PasswordConnexion{
     
     margin-left: 10%;
 }
-button{
+.PasswordConnexion{
+    margin-bottom: 20%;
+}
+.helpConnexion p{
+    margin-left: 10%;
+    margin-top: 2%;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.helpConnexion input{
+    width: 9%;
+    margin-right: 2%;
+
+}
+#submit_connexion{
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 7%;
     width: 40%;
     height: 5vh;
     font-size: 1.1rem;
     cursor: pointer;
     background-color: #E5B406;
+    border-radius: 3%;
     color: black;
     border: none;
+    margin-bottom: 3%;
+}
+#submit_connexion:hover{
+    background-color: white;
+    border: 1px solid #E5B406;
+    border-radius: 3%;
+}
+.inscriptionLink{
+    background-color: #E5B406;
+    width: 60%;
+    height: 5vh;
+    justify-content: center;
+    border-radius: 3%;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    border: none;
+    margin-top: 3%;
+    font-size: 1.1rem;
+    cursor: pointer;
+
+}
+.inscriptionLink:hover{
+    background-color: white;
+    border: 1px solid #E5B406;
+    border-radius: 3%;
 }
 
 
@@ -104,4 +169,83 @@ button{
 }
 .form-connexion .facebook {
     background-color: #5E81FF;
+}
+
+/* Responsive de la page */
+/* @media screen and (width : 2500px) {
+    .form-connexion label{
+        font-size: 2.3rem;
+    }
+    input{
+        font-size: 2rem;
+    }
+    .form-connexion i:nth-child(1){
+        font-size: 9rem;
+    }
+    .form-connexion i{
+        font-size: 3rem;
+    }
+    #submit_connexion{
+        font-size: 2.3rem;
+    }
+    .inscriptionLink{
+        font-size: 2.4rem;
+    }
+    .helpConnexion p{
+        font-size: 2rem;
+    }
+    .form-connexion p:nth-child(2){
+        font-size: 5rem;
+    }
+} */
+
+@media screen and (max-width : 900px) {
+    .form-connexion{
+        width: 35%;
+    }   
+}
+@media screen and (max-width : 650px) {
+    .form-connexion{
+        width: 45%;
+    }
+    #submit_connexion{
+        margin-top: 10%;
+    }
+    .helpConnexion p{
+        font-size: .7rem;
+    }
+}
+@media screen and (max-width : 500px) {
+    .form-connexion{
+        width: 50%;
+        border-radius: 3%;
+    }
+    #submit_connexion{
+        margin-top: 20%;
+    }
+    .helpConnexion p{
+        font-size: .6rem;
+    }
+}
+@media screen and (max-width : 450px) {
+    .form-connexion{
+        width: 50%;
+        border-radius: 2%;
+    }
+    #submit_connexion{
+        margin-top: 20%;
+    }
+    input{
+        margin-bottom: 1%;
+    }
+    #submit_connexion , .inscriptionLink{
+        font-size: .8rem;
+    }
+    .helpConnexion p{
+        font-size: .6rem;
+    }
+    
+    .form-connexion i:first-child{
+        font-size: 4rem;
+    }
 }
