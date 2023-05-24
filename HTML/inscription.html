@@ -1,57 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/inscription.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
-    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
-    <title>Document</title>
-</head>
-<body>
-    
-    <div class="container">
-        <div class="image">
-            <img src="../Ressources/IMAGES/istockphoto-640267784-612x612.jpg" alt="image de banque">
-        </div>
-
-        <div class="form-inscription">
-            <i class="fa-solid fa-circle-user"></i>
-
-            <div class="EmailInscription">
-            <label for="user_email">Adresse e-mail</label>
-            <div class="input"><input type="email" id="user_mail_inscription" name="mail"><i class="fa-solid fa-user"></i></div>
-            
-            </div>
-
-            <div class="Password_inscription">
-                <label for="user_password_inscription">Mot de passe</label>
-                <div class="input"><input type="password" id="user_password_inscription" name="Password"><i class="fa-solid fa-lock"></i></div>
-                </div>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/inscription.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         
+        <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
 
-        <div class="Email_confirme_inscription">
-            <label for="user_passwordConfirme">Confirmez votre mot de passe</label>
-            <div class="input"><input type="password" id="user_passwordConfirme_inscription" name="Email_confirme"><i class="fa-solid fa-lock"></i></div>
+        <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
+        <title>Slyston</title>
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="image">
+                <!-- <img src="../Ressources/IMAGES/istockphoto-640267784-612x612.jpg" alt="image de banque"> -->
             </div>
 
-            <a href="../HTML/connexion.html"><button id="submit_inscription">inscription</button></a>
+            <form class="form-inscription">
+                <i class="fa-solid fa-circle-user"></i>
 
-            <p class="lastP">Vous avez deja un compte ?<a href="../HTML/connexion.html">Connectez-vous</a></p>
+                <div class="nameInscription">
+                    <label for="user_name">Nom  utilisateur</label>
+                    <div class="input"><input type="text" id="user_name_inscription" name="name" placeholder="Entrez votre Nom"><i class="fa-solid fa-user"></i></div>
+                    
+                    </div>
+
+                    <div class="prenomInscription">
+                        <label for="user_prenom">Prenom</label>
+                        <div class="input"><input type="text" id="user_prenom_inscription" name="prenom" placeholder="Entrez votre prenom"><i class="fa-solid fa-user"></i></div>
+                        
+                        </div>
+
+                <div class="EmailInscription">
+                <label for="user_email">Adresse e-mail</label>
+                <div class="input"><input type="email" id="user_mail_inscription" name="mail" placeholder="Entrez votre email"><i class="fa-solid fa-user"></i></div>
+                
+                </div>
+
+                <div class="Password_inscription">
+                    <label for="user_password_inscription">Mot de passe</label>
+                    <div class="input"><input type="password" id="user_password_inscription" name="Password" placeholder="Entrez votre mot de passe"><i class="fa-solid fa-lock"></i></div>
+                    </div>
+            
+
+                <div class="Email_confirme_inscription">
+                    <label for="user_passwordConfirme">Confirmez votre mot de passe</label>
+                    <div class="input"><input type="password" id="user_passwordConfirme_inscription" name="Email_confirme" placeholder="Confirmez votre mot de passe"><i class="fa-solid fa-lock"></i></div>
+                </div>
+
+                <button id="submit_inscription">inscription</button>
+
+                <p class="lastP">Vous avez deja un compte ?<a href="../HTML/connexion.html">Connectez-vous</a></p>
+            </form>
+
+        
         </div>
 
-       
-    </div>
-
-    <!-- <script src="auth.js/firebase-app.js"></script>
-    <script src="auth.js/firebase-auth.js"></script>
-    <script src="auth.js/firebase-firestore.js"></script> -->
-
-
-
-    <script src="../JS/auth.js"></script>
-    <script src="../Controllers/Users/signUser.js" type="module"></script>
-</body>
-</html>
+        <!-- <script src="../JS/auth.js"></script> -->
+        <!-- <script src="../JS/auth.js" type="module"></script> -->
+        <script src="../Controllers/Users/signUser.js" type="module"></script>
+    </body>
+    </html>

@@ -1,9 +1,13 @@
+/* DEPOT STYLE */
 .section5{
     width: 60%;
     height: auto;
     margin-bottom: 10px;
     /* margin: 50px auto 10px; */
     /* border: 1px solid black; */
+    background: whitesmoke;
+    transition: 0.2s linear;
+    box-shadow: 1px 1px 10px lightslategray;
     
 }
 .section5 .name-data{
@@ -33,21 +37,45 @@ color: #353535;
     height: auto;
     justify-content: space-around;
 }
-.user-trans-block .name-content{
+.user-trans-block .name-content1{
     width: 90%;
     height: 100%;
     display: block;
 }
-.name-content .inputs{
-    width: 100%;
-    height: auto;
-    padding: 5px;
-    outline: none;
-}
-.name-content-choix{
-    display: flex;
+/* desactiver */
+.user-trans-block .name-content_depot{
     width: 90%;
     height: 100%;
+    /* display: block; */
+    display: none;
+}
+.name-content_depot .inputs{
+    width: 100%;
+  height: auto;
+  outline: none;
+  border-radius: 8px;
+  padding: 7px 16px;
+  box-shadow: rgba(77, 79, 82, 0.2) 0px 8px 24px;
+  border: 2px solid rgb(184, 180, 180);
+  font-size: 1rem;
+}
+.name-content1 .inputs{
+    width: 100%;
+  height: auto;
+  outline: none;
+  border-radius: 8px;
+  padding: 7px 16px;
+  box-shadow: rgba(77, 79, 82, 0.2) 0px 8px 24px;
+  border: 2px solid rgb(184, 180, 180);
+  font-size: 1rem;
+}
+
+/* desactiver */
+.name-content-choix{
+    /* display: flex; */
+    width: 90%;
+    height: 100%;
+    display: none;
 }
 .content-two1{
     width: 100%;
@@ -60,26 +88,35 @@ color: #353535;
 }
 #sexe{
     height: auto;
-    padding: 5px;
     outline: none;
+  border-radius: 8px;
+  padding: 7px 16px;
+  box-shadow: rgba(77, 79, 82, 0.2) 0px 8px 24px;
+  border: 2px solid rgb(184, 180, 180);
+  font-size: 1rem;
 }
 .name-content-choix #Contact{
     width: 100%;
     height: auto;
-    padding: 5px;
     outline: none;
+    border-radius: 8px;
+    padding: 7px 16px;
+    box-shadow: rgba(77, 79, 82, 0.2) 0px 8px 24px;
+    border: 2px solid rgb(184, 180, 180);
+    font-size: 1rem;
 }
 label{
     display: block;
     padding: 5px;
 }
-.infos-user-trans .profit-image{
+/* desactiver */
+.infos-user-trans .profit-image_depot{
     width: 50%;
     height: auto;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     padding: 30px;
-    /* align-items: center; */
+    display: none;
 }
 .card-img{
  width: 100%;
@@ -102,3 +139,19 @@ label{
     border-radius: 5px;
     background-color: #000000;
 }
+
+@media screen and (max-width: 619px) {
+    .section5 {
+        width: 100%;
+      
+    }
+}
+
+.trans-active-block{
+    display: block;
+  }
+  .trans-active-flex{
+    display: flex;
+  }
+
+

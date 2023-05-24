@@ -1,9 +1,14 @@
+/* RETRAIT STYLE */
+
 .section6{
     width: 60%;
     height: auto;
     margin-bottom: 10px;
-    margin: 50px auto 10px;
+    /* margin: 50px auto 10px; */
     /* border: 1px solid black; */
+    background: whitesmoke;
+    transition: 0.2s linear;
+    box-shadow: 1px 1px 10px lightslategray;
     
 }
 .section6 .name-data{
@@ -33,7 +38,15 @@ color: #353535;
     height: auto;
     justify-content: space-around;
 }
+
+/* desactiver */
 .user-trans-block .name-content{
+    width: 90%;
+    height: 100%;
+    /* display: block; */
+    display: none;
+}
+.user-trans-block .name-content1{
     width: 90%;
     height: 100%;
     display: block;
@@ -44,10 +57,19 @@ color: #353535;
     padding: 5px;
     outline: none;
 }
-.name-content-choix{
-    display: flex;
+.name-content1 .inputs{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    outline: none;
+}
+
+/* desactiver */
+.name-content-choix-retrait{
+    /* display: flex; */
     width: 90%;
     height: 100%;
+    display: none;
 }
 .content-two1{
     width: 100%;
@@ -58,28 +80,39 @@ color: #353535;
     width: auto;
     height: auto;
 }
-#sexe{
+#sexe_retrait{
     height: auto;
     padding: 5px;
     outline: none;
+    border-radius: 8px;
+    padding: 7px 16px;
+    box-shadow: rgba(77, 79, 82, 0.2) 0px 8px 24px;
+    border: 2px solid rgb(184, 180, 180);
+    font-size: 1rem;
 }
-.name-content-choix #Contact{
+.name-content-choix-retrait #Contact-retrait{
     width: 100%;
     height: auto;
-    padding: 5px;
     outline: none;
+    border-radius: 8px;
+    padding: 7px 16px;
+    box-shadow: rgba(77, 79, 82, 0.2) 0px 8px 24px;
+    border: 2px solid rgb(184, 180, 180);
+    font-size: 1rem;
 }
 label{
     display: block;
     padding: 5px;
 }
+
+/* desactiver */
 .infos-user-trans .profit-image{
     width: 50%;
     height: auto;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     padding: 30px;
-    /* align-items: center; */
+    display: none;
 }
 .card-img{
  width: 100%;
@@ -102,3 +135,12 @@ label{
     border-radius: 5px;
     background-color: #000000;
 }
+
+@media screen and (max-width: 619px) {
+    .section6 {
+        width: 100%;
+      
+    }
+}
+
+  
