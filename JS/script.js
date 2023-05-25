@@ -1,29 +1,58 @@
-// const buttons = document.querySelectorAll("[data-slide-direction]");
+let slideIndex = 0;
+showSlides();
 
-// buttons.forEach((button) => {
-//   button.addEventListener("click", () => {
-//     const offset = button.dataset.slideDirection === "next" ? 1 : -1;
-//     changeSlide(offset);
-//   });
-// });
+// Next-previous control
+function nextSlide() {
+  slideIndex++;
+  showSlides();
+  timer = _timer; // reset timer
+}
 
-// const changeSlide = (offset) => {
-//   const slides = document.querySelector(".slides");
-//   const activeSlide = slides.querySelector("[data-active-slide]");
-//   let newIndex = [...slides.children].indexOf(activeSlide) + offset;
-//   newIndex =
-//     newIndex < 0
-//       ? slides.children.length - 1
-//       : newIndex === slides.children.length
-//       ? 0
-//       : newIndex;
-//   slides.children[newIndex].dataset.activeSlide = true;
-//   delete activeSlide.dataset.activeSlide;
+function prevSlide() {
+  slideIndex--;
+  showSlides();
+  timer = _timer;
+}
 
-//   const circles = document.querySelector(".slides-circles");
-//   const activeCircle = circles.querySelector("[data-active-slide]");
-//   circles.children[newIndex].dataset.activeSlide = true;
-//   delete activeCircle.dataset.activeSlide;
-// };
+// Thumbnail image controlls
+function currentSlide(n) {
+  slideIndex = n - 1;
+  showSlides();
+  timer = _timer;
+}
 
-// // setInterval(changeSlide.bind(null, 1), 6000);
+function showSlides() {
+  let slides = document.querySelectorAll(".mySlides");
+  let dots = document.querySelectorAll(".dots");
+
+  if (slideIndex > slides.length - 1) slideIndex = 0;
+  if (slideIndex < 0) slideIndex = slides.length - 1;
+
+  // hide all slides
+  slides.forEach((slide) => {
+    slide.style.display = "none";
+  });
+
+  // show one slide base on index number
+  slides[slideIndex].style.display = "block";
+
+  dots.forEach((dot) => {
+    dot.classList.remove("active");
+  });
+
+  dots[slideIndex].classList.add("active");
+}
+
+// autoplay slides --------
+let timer = 7; // sec
+const _timer = timer;
+
+// this function runs every 1 second
+setInterval(() => {
+  timer--;
+
+  if (timer < 1) {
+    nextSlide();
+    timer = _timer; // reset timer
+  }
+}, 1000);
