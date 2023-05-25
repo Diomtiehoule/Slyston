@@ -63,10 +63,10 @@ btn_form.addEventListener('click',(e)=>{
         metierClient:"",
         soldes:{
             soldActuel:0,
-            soldRetraits:0,
-            nbreRetraits:0,
-            nbreDepots:0
+            soldRetraits:0
         },
+        depotBlock:[],
+        retraitBlock:[],
         messages:{
             smsRetrait:0,
             smsDepot:0,
@@ -81,11 +81,7 @@ btn_form.addEventListener('click',(e)=>{
         createUser(user)
         form.reset();
     }else{
-<<<<<<< HEAD
         swal("Veuillez entrer des mots de passe conforme");
-=======
-        alert("password !!!")
->>>>>>> 38a9bdbb8676f9692be37c7d7f1edae723f4cee5
     }
    if(!user.nom||!user.prenom || !user.email|| !user.password){
     swal("Inscription impossible", "Veuillez remplir tout le formulaire !", "error");
