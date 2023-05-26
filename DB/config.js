@@ -28,9 +28,5 @@ const userCollection=collection(db, 'users')
 
 
 
-<<<<<<< HEAD
 export {db, auth, userCollection,createUserWithEmailAndPassword,addDoc,signInWithEmailAndPassword,getDocs,updateDoc, doc, getDoc}
-=======
-export {db, auth, userCollection,createUserWithEmailAndPassword,addDoc,signInWithEmailAndPassword,getDocs,updateDoc, doc,getDoc}
->>>>>>> 19958bd0b2a2e714606f7751d1832e6539c6c4ab
 
