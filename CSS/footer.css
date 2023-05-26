@@ -1,7 +1,7 @@
 /**********************************/
 /* footer */
 .footer{
-    margin-top: 20%;
+    margin-top: 5%;
     color: #fff;
     background: #092B3A;
 }
@@ -33,12 +33,12 @@
 
 input{
     width: 20rem;
-    height: 4vh;
+    height: 6vh;
 }
 button{
     background-color: #eed620;
     width: 10rem;
-    height: 4vh;
+    height: 6vh;
     padding: 4px;
 }
 .footer-info_2{
@@ -104,12 +104,12 @@ button{
     }
     input{
         width: 17rem;
-        height: 4vh;
+        height: 5vh;
     }
     button{
         background-color: #eed620;
         width: 8rem;
-        height: 4vh;
+        height: 5vh;
         padding: 4px;
     }
     .footer-info_2{
@@ -151,5 +151,8 @@ button{
         margin-top: 7px;
         padding: 2px;
         justify-content: center;
+    }
+    .footer-info_2 span{
+        font-size: 1.2rem;
     }
 }
