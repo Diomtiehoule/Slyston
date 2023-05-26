@@ -106,7 +106,9 @@ fichier.addEventListener("load", () => {
       sexe: utilisateur.sexe
     });
 
-    alert('Informations mises à jour avec succès !');
+    {
+      swal("Succes", "Information  mis a jour !", "success");
+     };
   } catch (error) {
     console.error("Une erreur s'est produite lors de la mise à jour :", error);
   }
@@ -159,8 +161,11 @@ async function updatePassword(data) {
   const newPasswordConfig = document.querySelector('#password2').value;
 
   if (newPassword !== newPasswordConfig) {
-    alert('Les mots de passe ne correspondent pas.');
+    {
+      swal("Echec", "Les mots de passe ne correspondent pas !", "error");
+     }
     return;
+    
   }
 
   try {
@@ -170,7 +175,9 @@ async function updatePassword(data) {
     console.log('Chemin vers la collection :', userCollection.path);
     await updateDoc(userRef, { password: newPassword });
 
-    alert('Mot de passe mis à jour avec succès !');
+    {
+      swal("Succes", "Mot de passe mis a jour !", "success");
+     };
   } catch (error) {
     console.error("Une erreur s'est produite lors de la mise à jour du mot de passe :", error);
   }
@@ -192,7 +199,9 @@ async function updateEmail(data) {
   let newMail = document.querySelector('#email').value;
 
   if (newMail === "") {
-    alert('Les adresses e-mail ne correspondent pas.');
+    {
+      swal("Les adresses e-mail ne correspondent pas.");
+  }
     return;
   }
 
@@ -203,7 +212,9 @@ async function updateEmail(data) {
     console.log('Chemin vers la collection :', userCollection.path);
     await updateDoc(userRef, { email: newMail });
 
-    alert('Adresse e-mail mise à jour avec succès !');
+    {
+      swal("Succes", "Adresse e-mail mis a jour !", "success");
+     };
   } catch (error) {
     console.error("Une erreur s'est produite lors de la mise à jour de l'adresse e-mail :", error);
   }
@@ -231,7 +242,9 @@ async function updateTel(data) {
     console.log('Chemin vers la collection :', userCollection.path);
     await updateDoc(userRef, { Contact: newTel });
 
-    alert('Contact mis à jour avec succès !');
+    {
+      swal("Succes", "contact mis a jour !", "success");
+     };
   } catch (error) {
     console.error("Une erreur s'est produite lors de la mise à jour du contact :", error);
   }
