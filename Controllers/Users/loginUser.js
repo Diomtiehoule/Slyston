@@ -6,6 +6,8 @@ const email = document.querySelector("#user_mail_connexion");
 let loginBtn = document.querySelector('#submit_connexion');
 let form = document.querySelector('.form-connexion');
 
+console.log('form',form)
+
 let alldataUser = [];
 
 loginBtn.addEventListener('click', (e) => {
