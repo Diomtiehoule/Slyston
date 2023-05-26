@@ -154,4 +154,4 @@ async function recupereDocumentId(userCollection) {
     console.error("Une erreur s'est produite lors de la récupération des documents :", error);
     return null;
   }
-}
+}0

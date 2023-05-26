@@ -38,15 +38,7 @@ const auth = getAuth(app);
 //mes collections
 const userCollection = collection(db, "users");
 
-export {
-  db,
-  auth,
-  userCollection,
-  createUserWithEmailAndPassword,
-  addDoc,
-  signInWithEmailAndPassword,
-  getDocs,
-  updateDoc,
-  doc,
-  getDoc
-};
+
+
+export {db, auth, userCollection,createUserWithEmailAndPassword,addDoc,signInWithEmailAndPassword,getDocs,updateDoc, doc,getDoc}
+
