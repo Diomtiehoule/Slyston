@@ -1,405 +1,530 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/dashboardUser.css">
-    <link rel="stylesheet" href="../CSS/UsersSousPage/home.css">
-    <link rel="stylesheet" href="../CSS/UsersSousPage/home1.css">
-    <link rel="stylesheet" href="../CSS/UsersSousPage/home2.css">
-    <link rel="stylesheet" href="../CSS/UsersSousPage/home3.css">
-    <link rel="stylesheet" href="../CSS/UsersSousPage/home4.css">
-    <link rel="stylesheet" href="../CSS/UsersSousPage/home5.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/dashboardUser.css" />
+    <link rel="stylesheet" href="../CSS/UsersSousPage/home.css" />
+    <link rel="stylesheet" href="../CSS/UsersSousPage/home1.css" />
+    <link rel="stylesheet" href="../CSS/UsersSousPage/home2.css" />
+    <link rel="stylesheet" href="../CSS/UsersSousPage/home3.css" />
+    <link rel="stylesheet" href="../CSS/UsersSousPage/home4.css" />
+    <link rel="stylesheet" href="../CSS/UsersSousPage/home5.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <title>Slyston</title>
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      href="../Ressources/Logo/SB.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
     <div class="block-dashboard">
-        <div class="header-dasboard">
-          <div class="content-logo-text">
-             <div class="logo">
-                <img src="../Ressources/Logo/icons8-dashboard-32.png" alt="">
-             </div>
-             <div class="titre">
-                <h2>Dashboard</h2>
-             </div>
+      <div class="header-dasboard">
+        <div class="content-logo-text">
+          <div class="logo">
+            <img src="../Ressources/Logo/icons8-dashboard-32.png" alt="" />
           </div>
-          <div class="content-icons-parametres">
-            <div class="icons"><img src="../Ressources/Logo/icons8-dashboard-32.png" alt=""></div>
-            <div class="icons"><img src="../Ressources/Logo/icons8-dashboard-32.png" alt=""></div>
+          <div class="titre">
+            <h2>Dashboard</h2>
           </div>
         </div>
-        <div class="contenues">
-            
-            <div class="menu-dashboard">
-                <div class="card-photo-name">
-                  <div class="photo"><img src="../Ressources/IMAGES/yuebirds-1TGzyOUrb1o-unsplash.jpg" alt="" width="100px" height="100px"></div>
-                  <h3></h3>
-                </div>
-                <div class="sous-menu">
-                   <nav class="menu-nav">
-                     <ul>
-                        <li class="btn-menu"><img src="../Ressources/Logo/icons8-menu-64.png" alt=""><span>Apercu</span></li>
-                         <li class="btn-menu"><img src="../Ressources/Logo/icons8-menu-64.png" alt=""><span>Transactions</span><img src="../Ressources/Logo/icons8-plus-math-30.png" alt="" class="imgmore"></li>
-                         <li class="desactivate">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="../Ressources/Logo/icons8-menu-64.png" alt=""><span>Dépots (Crédit)</span></li>
-                         <li class="desactivate">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../Ressources/Logo/icons8-menu-64.png" alt=""><span>Retraits (Débit)</span></li>
-                         <li class="btn-menu"><img src="../Ressources/Logo/icons8-setting-32.png" alt=""><span>Parametres</span><img src="../Ressources/Logo/icons8-plus-math-30.png" alt="" class="imgmore"></li>
-                         <li class="desactivate">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../Ressources/Logo/icons8-setting-24.png" alt=""><span>Réglage général</span></li>
-                         <li class="desactivate">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../Ressources/Logo/icons8-password-48.png" alt=""><span>Mot de passe</span></li>
-                         <li class="btn-menu"><img src="../Ressources/Logo/icons8-chat-message-48.png" alt=""><span>Messages</span></li>
-                         
-                     </ul>
-                   </nav>
-                   <nav class="exitNav">
-                     <ul>
-                         <li class="btn-menu" ><img src="../Ressources/Logo/icons8-exit-48.png" alt=""><span>Exit</span></li>
-                     </ul>
-                   </nav>
-                </div>
-             </div>
-            <div class="contenaire-elements1">
-                <div class="cadres">
-                    <div class="cadre-elements">
-                        <div class="img-trans"><img src="../Ressources/Logo/icons8-messaging-16.png" alt=""></div>
-                        <p>0</p>
-                        <h3>Depots</h3>
-                    </div>
-                    <div class="cadre-elements">
-                        <div class="img-trans"><img src="../Ressources/Logo/icons8-messaging-16.png" alt=""></div>
-                        <p>0</p>
-                        <h3>Retraits</h3>
-                    </div>
-                    <div class="cadre-elements">
-                        <div class="img-trans"><img src="../Ressources/Logo/icons8-messaging-16.png" alt=""></div>
-                        <p>0</p>
-                        <h3>Soldes</h3>
-                    </div>
-                    
-                </div>
-                <div class="tabs">
-                    <div class="name-data">
-                        <h3>Operations Du Jour</h3>
-                        <img src="../Ressources/Logo/menu.png" alt="">
-                    </div>
-                    <table>
-                        <tr>
-                            <th>N°</th>
-                            <th>Clients</th>
-                            <th>Type Trans.</th>
-                            <th>Montant</th>
-                            <th>Num Trans</th>
-                            <th>Date</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Yoboue louis</td>
-                            <td>Depots</td>
-                            <td>100 000 </td>
-                            <td>23443443434</td>
-                            <td>12/33/333</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Yoboue louis</td>
-                            <td>Depots</td>
-                            <td>100 000 </td>
-                            <td>23443443434</td>
-                            <td>12/33/333</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Yoboue louis</td>
-                            <td>Depots</td>
-                            <td>100 000 </td>
-                            <td>23443443434</td>
-                            <td>12/33/333</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Yoboue louis</td>
-                            <td>Depots</td>
-                            <td>100 000 </td>
-                            <td>23443443434</td>
-                            <td>12/33/333</td>
-                        </tr>
-                    </table>
-                </div>
-                <p class="total">Total: <span>100 000 f</span></p>
-        
-        
-        
-               <div class="gggg">
-                <button class="imprimer"><img src="../Ressources/Logo/icons8-uninstalling-updates-64.png" alt=""><span>Imprimer</span></button>
-               </div>
+        <div class="content-icons-parametres">
+          <div class="icons">
+            <img src="../Ressources/Logo/icons8-dashboard-32.png" alt="" />
+          </div>
+          <div class="icons">
+            <img src="../Ressources/Logo/icons8-dashboard-32.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="contenues">
+        <div class="menu-dashboard">
+          <div class="card-photo-name">
+            <div class="photo">
+              <img
+                src="../Ressources/IMAGES/yuebirds-1TGzyOUrb1o-unsplash.jpg"
+                alt=""
+                width="100px"
+                height="100px"
+              />
             </div>
-            <div class="contenaire-elements2">
-                <form class="section1">
-                    <div class="name-data">
-                        <h3>Details personne</h3>
-                        <img src="../Ressources/Logo/menu.png" alt="">
-                    </div>
-                    <div class="update-photo">
-                        <div class="up-photo"><img src="../Ressources/IMAGES/yuebirds-1TGzyOUrb1o-unsplash.jpg" alt=""></div>
-                        <div class="search-photo">
-                            <!-- <img src="Logo/menu.png" alt=""> -->
-                            <input type="file" accept="image/*" required="" >
-                        </div>
-                    </div>
-                    <div class="name-lastname">
-                        <div class="name-content">
-                            <label for="nom">Nom</label>
-                            <input type="text" id="nom">
-                        </div>
-                        <div class="name-content">
-                            <label for="nom">Prenom</label>
-                            <input type="text" id="prenom">
-                        </div>
-                    </div>
-                    <div class="name-lastname1">
-                        <div class="name-content">
-                            <label for="nom">Age</label>
-                            <input type="text" id="age">
-                        </div>
-                        <div class="name-content">
-                            <label for="choix">Sexe</label>
-                            <select name="" id="choix">
-                                <option value="F">F</option>
-                                <option value="M">M</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="content-btn-save">
-                        <button class="save">Sauvegarder</button>
-                    </div>
-                </form>
-                <div class="section2">
-                    <div class="name-data">
-                        <h3>Autres</h3>
-                        <img src="../Ressources/Logo/menu.png" alt="">
-                    </div>
-        
-                    <div class="name-lastname">
-                        <div class="content">
-                            <div class="user-content">
-                                <label for="nom">Adresse Email</label>
-                                <input type="email" id="email" placeholder="user@gmail.com">
-                            </div>
-                            <button class="miseajour">Sauvegarder</button>
-                        </div>
-                        <div class="content">
-                            <div class="user-content">
-                                <label for="nom">Numero de Tel</label>
-                                <input type="tel" id="tel" placeholder="07 89 45 90 00">
-                            </div>
-                            <button class="miseajour1">Sauvegarder</button>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="contenaire-elements3">
-                <form class="section3">
-                    <div class="name-data">
-                        <h3>Paramètres de mot de passe</h3>
-                        <img src="../Ressources/Logo/menu.png" alt="">
-                    </div>
-                    <div class="name-lastname">
-                        <div class="name-content">
-                            <label for="password1">Mot de passe actuel</label>
-                            <input type="password" id="password1">
-                        </div>
-                        <div class="name-content">
-                            <label for="password2">Nouveau mot de passe</label>
-                            <input type="password" id="password2">
-                        </div>
-                    </div>
-                    <div class="btn-save">
-                        <button class="save2">Sauvegarder</button>
-                    </div>
-                </form>
-        
+            <h3></h3>
+          </div>
+          <div class="sous-menu">
+            <nav class="menu-nav">
+              <ul>
+                <li class="btn-menu">
+                  <img
+                    src="../Ressources/Logo/icons8-menu-64.png"
+                    alt=""
+                  /><span>Apercu</span>
+                </li>
+                <li class="btn-menu">
+                  <img
+                    src="../Ressources/Logo/icons8-menu-64.png"
+                    alt=""
+                  /><span>Transactions</span
+                  ><img
+                    src="../Ressources/Logo/icons8-plus-math-30.png"
+                    alt=""
+                    class="imgmore"
+                  />
+                </li>
+                <li class="desactivate">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <img
+                    src="../Ressources/Logo/icons8-menu-64.png"
+                    alt=""
+                  /><span>Dépots (Crédit)</span>
+                </li>
+                <li class="desactivate">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                    src="../Ressources/Logo/icons8-menu-64.png"
+                    alt=""
+                  /><span>Retraits (Débit)</span>
+                </li>
+                <li class="btn-menu">
+                  <img
+                    src="../Ressources/Logo/icons8-setting-32.png"
+                    alt=""
+                  /><span>Parametres</span
+                  ><img
+                    src="../Ressources/Logo/icons8-plus-math-30.png"
+                    alt=""
+                    class="imgmore"
+                  />
+                </li>
+                <li class="desactivate">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                    src="../Ressources/Logo/icons8-setting-24.png"
+                    alt=""
+                  /><span>Réglage général</span>
+                </li>
+                <li class="desactivate">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                    src="../Ressources/Logo/icons8-password-48.png"
+                    alt=""
+                  /><span>Mot de passe</span>
+                </li>
+                <li class="btn-menu">
+                  <img
+                    src="../Ressources/Logo/icons8-chat-message-48.png"
+                    alt=""
+                  /><span>Messages</span>
+                </li>
+              </ul>
+            </nav>
+            <nav class="exitNav">
+              <ul>
+                <li class="btn-menu">
+                  <img
+                    src="../Ressources/Logo/icons8-exit-48.png"
+                    alt=""
+                  /><span>Exit</span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="contenaire-elements1">
+          <div class="cadres">
+            <div class="cadre-elements">
+              <div class="img-trans">
+                <img src="../Ressources/Logo/icons8-messaging-16.png" alt="" />
               </div>
-              <div class="contenaire-elements4">
-                <form class="section5">
-                   <div class="name-data">
-                       <h3>DEPOT D'ARGENT (Crédit)</h3>
-                       <img src="../Ressources/Logo/menu.png" alt="">
-                   </div>
-                   <div class="infos-user-trans">
-                       <div class="user-trans-block">
-                           <div class="name-content1">
-                               <label for="Id_clients">N° de Compte du client client</label>
-                               <input type="text" id="Id_clients" class="inputs"  placeholder="#####">
-                           </div>
-                           <div class="name-content_depot">
-                               <label for="Nom">Nom</label>
-                               <input type="text" id="Nom" class="inputs">
-                           </div>
-                           <div class="name-content_depot">
-                               <label for="Prenom">Prenom</label>
-                               <input type="text" id="Prenom" class="inputs">
-                           </div>
-                           <div class="name-content-choix">
-                               <div class="content-two1">
-                                   <label for="Contact">Contact</label>
-                                   <input type="tel" id="Contact" >
-                               </div>
-                               <div class="content-two">
-                                   <label for="Contact">Sexe</label>
-                                   <select name="" id="sexe">
-                                       <option value="F">F</option>
-                                       <option value="M">M</option>
-                                   </select>
-                               </div>
-                           </div>
-                           <div class="name-content_depot">
-                               <label for="Montant">Montant</label>
-                               <input type="text" id="Montant" class="inputs">
-                           </div>
-                       </div>
-                       <div class="profit-image_depot">
-                           <div class="card-img">
-                               <img src="../Ressources/IMAGES/yuebirds-1TGzyOUrb1o-unsplash.jpg" alt="">
-                           </div>
-                       </div>
-                   </div>
-                   
-       
-                   <button class="send-depot-btn">DEPOSER</button>
-                </form>
+              <p>0</p>
+              <h3>Depots</h3>
             </div>
-            <div class="contenaire-elements5">
-                <form class="section6">
-                   <div class="name-data">
-                       <h3>RETRAIT D'ARGENT (Débit)</h3>
-                       <img src="../Ressources/Logo/menu.png" alt="">
-                   </div>
-                   <div class="infos-user-trans">
-                       <div class="user-trans-block">
-                           <div class="name-content1">
-                               <label for="Id_clients">N° de Compte du client client</label>
-                               <input type="text" id="Id_clients_retrait" class="inputs" placeholder="#####">
-                           </div>
-                           <div class="name-content">
-                               <label for="Nom">Nom</label>
-                               <input type="text" id="Nom_retrait" class="inputs">
-                           </div>
-                           <div class="name-content">
-                               <label for="Prenom">Prenom</label>
-                               <input type="text" id="Prenom_retrait" class="inputs">
-                           </div>
-                           <div class="name-content-choix-retrait">
-                               <div class="content-two1">
-                                   <label for="Contact">Contact</label>
-                                   <input type="tel" id="Contact-retrait" >
-                               </div>
-                               <div class="content-two">
-                                   <label for="Contact">Sexe</label>
-                                   <select name="" id="sexe_retrait">
-                                       <option value="F">F</option>
-                                       <option value="M">M</option>
-                                   </select>
-                               </div>
-                           </div>
-                           <div class="name-content">
-                               <label for="Montant">Montant</label>
-                               <input type="text" id="Montant" class="inputs">
-                           </div>
-                       </div>
-                       <div class="profit-image">
-                           <div class="card-img">
-                               <img src="../Ressources/IMAGES/yuebirds-1TGzyOUrb1o-unsplash.jpg" alt="">
-                           </div>
-                       </div>
-                   </div>
-                   
-       
-                   <button class="send-depot-btn">VALIDER LE RETRAIT</button>
-                </form>
+            <div class="cadre-elements">
+              <div class="img-trans">
+                <img src="../Ressources/Logo/icons8-messaging-16.png" alt="" />
+              </div>
+              <p>0</p>
+              <h3>Retraits</h3>
             </div>
-            <div class="contenaire-elements6">
-                <form class="section4">
-                    <div class="name-data">
-                        <div class="theme">
-                            <h3>Notifications</h3>
-                            <p>Vous pouvez trouver tous les paramètres ici</p>
-                        </div>
-                        <img src="../Ressources/Logo/menu.png" alt="">
-                    </div>
-                    <div class="listes-messages">
-                        <div class="content-listes">
-                            <div class="liste-message">
-                                <div class="img-picture">
-                                    <img src="../Ressources/Logo/icons8-messaging-16.png" alt="">
-                                </div>
-                                <h4>Message </h4>
-                            </div>
-                            <p>Maintenant</p>
-                        </div>
-                        <div class="content-listes">
-                            <div class="liste-message">
-                                <div class="img-picture">
-                                    <img src="../Ressources/Logo/icons8-messaging-16.png" alt="">
-                                </div>
-                                <h4>Message 1</h4>
-                            </div>
-                            <p>Maintenant</p>
-                        </div>
-                        <div class="content-listes">
-                            <div class="liste-message">
-                                <div class="img-picture">
-                                    <img src="../Ressources/Logo/icons8-messaging-16.png" alt="">
-                                </div>
-                                <h4>Message 1</h4>
-                            </div>
-                            <p>Maintenant</p>
-                        </div>
-                        <div class="content-listes">
-                            <div class="liste-message">
-                                <div class="img-picture">
-                                    <img src="../Ressources/Logo/icons8-messaging-16.png" alt="">
-                                </div>
-                                <h4>Message 1</h4>
-                            </div>
-                            <p>Maintenant</p>
-                        </div>
-                        <div class="content-listes">
-                            <div class="liste-message">
-                                <div class="img-picture">
-                                    <img src="../Ressources/Logo/icons8-messaging-16.png" alt="">
-                                </div>
-                                <h4>Message 1</h4>
-                            </div>
-                            <p>Maintenant</p>
-                        </div>
-                        <div class="content-listes">
-                            <div class="liste-message">
-                                <div class="img-picture">
-                                    <img src="../Ressources/Logo/icons8-messaging-16.png" alt="">
-                                </div>
-                                <h4>Message 1</h4>
-                            </div>
-                            <p>Maintenant</p>
-                        </div>
-                    </div>
-                    <button class="Supprimer">Supprimer</button>
-                </form>
+            <div class="cadre-elements">
+              <div class="img-trans">
+                <img src="../Ressources/Logo/icons8-messaging-16.png" alt="" />
+              </div>
+              <p>0</p>
+              <h3>Soldes</h3>
             </div>
-            
+          </div>
+          <div class="tabs">
+            <div class="name-data">
+              <h3>Operations Du Jour</h3>
+              <img src="../Ressources/Logo/menu.png" alt="" />
+            </div>
+            <table>
+              <tr>
+                <th>N°</th>
+                <th>Clients</th>
+                <th>Type Trans.</th>
+                <th>Montant</th>
+                <th>Num Trans</th>
+                <th>Date</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Yoboue louis</td>
+                <td>Depots</td>
+                <td>100 000</td>
+                <td>23443443434</td>
+                <td>12/33/333</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Yoboue louis</td>
+                <td>Depots</td>
+                <td>100 000</td>
+                <td>23443443434</td>
+                <td>12/33/333</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Yoboue louis</td>
+                <td>Depots</td>
+                <td>100 000</td>
+                <td>23443443434</td>
+                <td>12/33/333</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Yoboue louis</td>
+                <td>Depots</td>
+                <td>100 000</td>
+                <td>23443443434</td>
+                <td>12/33/333</td>
+              </tr>
+            </table>
+          </div>
+          <p class="total">Total: <span>100 000 f</span></p>
+
+          <div class="gggg">
+            <button class="imprimer">
+              <img
+                src="../Ressources/Logo/icons8-uninstalling-updates-64.png"
+                alt=""
+              /><span>Imprimer</span>
+            </button>
+          </div>
         </div>
-        
-        
+        <div class="contenaire-elements2">
+          <form class="section1">
+            <div class="name-data">
+              <h3>Details personne</h3>
+              <img src="../Ressources/Logo/menu.png" alt="" />
+            </div>
+            <div class="update-photo">
+              <div class="up-photo">
+                <img
+                  src="../Ressources/IMAGES/yuebirds-1TGzyOUrb1o-unsplash.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="search-photo">
+                <!-- <img src="Logo/menu.png" alt=""> -->
+                <input type="file" accept="image/*" required="" />
+              </div>
+            </div>
+            <div class="name-lastname">
+              <div class="name-content">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" />
+              </div>
+              <div class="name-content">
+                <label for="nom">Prenom</label>
+                <input type="text" id="prenom" />
+              </div>
+            </div>
+            <div class="name-lastname1">
+              <div class="name-content">
+                <label for="nom">Age</label>
+                <input type="text" id="age" />
+              </div>
+              <div class="name-content">
+                <label for="choix">Sexe</label>
+                <select name="" id="choix">
+                  <option value="F">F</option>
+                  <option value="M">M</option>
+                </select>
+              </div>
+            </div>
+            <div class="content-btn-save">
+              <button class="save">Sauvegarder</button>
+            </div>
+          </form>
+          <div class="section2">
+            <div class="name-data">
+              <h3>Autres</h3>
+              <img src="../Ressources/Logo/menu.png" alt="" />
+            </div>
+
+            <div class="name-lastname">
+              <div class="content">
+                <div class="user-content">
+                  <label for="nom">Adresse Email</label>
+                  <input type="email" id="email" placeholder="user@gmail.com" />
+                </div>
+                <button class="miseajour">Sauvegarder</button>
+              </div>
+              <div class="content">
+                <div class="user-content">
+                  <label for="nom">Numero de Tel</label>
+                  <input type="tel" id="tel" placeholder="07 89 45 90 00" />
+                </div>
+                <button class="miseajour1">Sauvegarder</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contenaire-elements3">
+          <form class="section3">
+            <div class="name-data">
+              <h3>Paramètres de mot de passe</h3>
+              <img src="../Ressources/Logo/menu.png" alt="" />
+            </div>
+            <div class="name-lastname">
+              <div class="name-content">
+                <label for="password1">Mot de passe actuel</label>
+                <input type="password" id="password1" />
+              </div>
+              <div class="name-content">
+                <label for="password2">Nouveau mot de passe</label>
+                <input type="password" id="password2" />
+              </div>
+            </div>
+            <div class="btn-save">
+              <button class="save2">Sauvegarder</button>
+            </div>
+          </form>
+        </div>
+        <div class="contenaire-elements4">
+          <form class="section5">
+            <div class="name-data">
+              <h3>DEPOT D'ARGENT (Crédit)</h3>
+              <img src="../Ressources/Logo/menu.png" alt="" />
+            </div>
+            <div class="infos-user-trans">
+              <div class="user-trans-block">
+                <div class="name-content1">
+                  <label for="Id_clients">N° de Compte du client client</label>
+                  <input
+                    type="text"
+                    id="Id_clients"
+                    class="inputs"
+                    placeholder="#####"
+                  />
+                </div>
+                <div class="name-content_depot">
+                  <label for="Nom">Nom</label>
+                  <input type="text" id="Nom" class="inputs" />
+                </div>
+                <div class="name-content_depot">
+                  <label for="Prenom">Prenom</label>
+                  <input type="text" id="Prenom" class="inputs" />
+                </div>
+                <div class="name-content-choix">
+                  <div class="content-two1">
+                    <label for="Contact">Contact</label>
+                    <input type="tel" id="Contact" />
+                  </div>
+                  <div class="content-two">
+                    <label for="Contact">Sexe</label>
+                    <select name="" id="sexe">
+                      <option value="F">F</option>
+                      <option value="M">M</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="name-content_depot">
+                  <label for="Montant">Montant</label>
+                  <input type="text" id="Montant" class="inputs" />
+                </div>
+              </div>
+              <div class="profit-image_depot">
+                <div class="card-img">
+                  <img
+                    src="../Ressources/IMAGES/yuebirds-1TGzyOUrb1o-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+
+            <button class="send-depot-btn">DEPOSER</button>
+          </form>
+        </div>
+        <div class="contenaire-elements5">
+          <form class="section6">
+            <div class="name-data">
+              <h3>RETRAIT D'ARGENT (Débit)</h3>
+              <img src="../Ressources/Logo/menu.png" alt="" />
+            </div>
+            <div class="infos-user-trans">
+              <div class="user-trans-block">
+                <div class="name-content1">
+                  <label for="Id_clients">N° de Compte du client client</label>
+                  <input
+                    type="text"
+                    id="Id_clients_retrait"
+                    class="inputs"
+                    placeholder="#####"
+                  />
+                </div>
+                <div class="name-content">
+                  <label for="Nom">Nom</label>
+                  <input type="text" id="Nom_retrait" class="inputs" />
+                </div>
+                <div class="name-content">
+                  <label for="Prenom">Prenom</label>
+                  <input type="text" id="Prenom_retrait" class="inputs" />
+                </div>
+                <div class="name-content-choix-retrait">
+                  <div class="content-two1">
+                    <label for="Contact">Contact</label>
+                    <input type="tel" id="Contact-retrait" />
+                  </div>
+                  <div class="content-two">
+                    <label for="Contact">Sexe</label>
+                    <select name="" id="sexe_retrait">
+                      <option value="F">F</option>
+                      <option value="M">M</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="name-content">
+                  <label for="Montant">Montant</label>
+                  <input type="text" id="Montant" class="inputs" />
+                </div>
+              </div>
+              <div class="profit-image">
+                <div class="card-img">
+                  <img
+                    src="../Ressources/IMAGES/yuebirds-1TGzyOUrb1o-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+
+            <button class="send-depot-btn">VALIDER LE RETRAIT</button>
+          </form>
+        </div>
+        <div class="contenaire-elements6">
+          <form class="section4">
+            <div class="name-data">
+              <div class="theme">
+                <h3>Notifications</h3>
+                <p>Vous pouvez trouver tous les paramètres ici</p>
+              </div>
+              <img src="../Ressources/Logo/menu.png" alt="" />
+            </div>
+            <div class="listes-messages">
+              <div class="content-listes">
+                <div class="liste-message">
+                  <div class="img-picture">
+                    <img
+                      src="../Ressources/Logo/icons8-messaging-16.png"
+                      alt=""
+                    />
+                  </div>
+                  <h4>Message</h4>
+                </div>
+                <p>Maintenant</p>
+              </div>
+              <div class="content-listes">
+                <div class="liste-message">
+                  <div class="img-picture">
+                    <img
+                      src="../Ressources/Logo/icons8-messaging-16.png"
+                      alt=""
+                    />
+                  </div>
+                  <h4>Message 1</h4>
+                </div>
+                <p>Maintenant</p>
+              </div>
+              <div class="content-listes">
+                <div class="liste-message">
+                  <div class="img-picture">
+                    <img
+                      src="../Ressources/Logo/icons8-messaging-16.png"
+                      alt=""
+                    />
+                  </div>
+                  <h4>Message 1</h4>
+                </div>
+                <p>Maintenant</p>
+              </div>
+              <div class="content-listes">
+                <div class="liste-message">
+                  <div class="img-picture">
+                    <img
+                      src="../Ressources/Logo/icons8-messaging-16.png"
+                      alt=""
+                    />
+                  </div>
+                  <h4>Message 1</h4>
+                </div>
+                <p>Maintenant</p>
+              </div>
+              <div class="content-listes">
+                <div class="liste-message">
+                  <div class="img-picture">
+                    <img
+                      src="../Ressources/Logo/icons8-messaging-16.png"
+                      alt=""
+                    />
+                  </div>
+                  <h4>Message 1</h4>
+                </div>
+                <p>Maintenant</p>
+              </div>
+              <div class="content-listes">
+                <div class="liste-message">
+                  <div class="img-picture">
+                    <img
+                      src="../Ressources/Logo/icons8-messaging-16.png"
+                      alt=""
+                    />
+                  </div>
+                  <h4>Message 1</h4>
+                </div>
+                <p>Maintenant</p>
+              </div>
+            </div>
+            <button class="Supprimer">Supprimer</button>
+          </form>
+        </div>
+      </div>
     </div>
-     
+
     <script src="../Controllers/menuReponsible.js" async></script>
-    <script src="../Controllers/Users/transation.js"  type="module" async></script>
-    <script src="../Controllers/Users/retrait.js"  type="module" async></script>
-    <script src="../Controllers/Users/infosUser.js" type="module" async></script>
+    <script
+      src="../Controllers/Users/transation.js"
+      type="module"
+      async
+    ></script>
+    <script src="../Controllers/Users/retrait.js" type="module" async></script>
+    <script
+      src="../Controllers/Users/infosUser.js"
+      type="module"
+      async
+    ></script>
     <script src="../Controllers/Users/pagination.js" async></script>
-    <script src="../Controllers/Users/updateProfit.js" type="module" async></script>
+    <script
+      src="../Controllers/Users/updateProfit.js"
+      type="module"
+      async
+    ></script>
     <!-- <script src="../Controllers/Users/logout.js"></script> -->
     <!-- <script src="js/script.js"></script> -->
-</body>
+  </body>
 </html>
