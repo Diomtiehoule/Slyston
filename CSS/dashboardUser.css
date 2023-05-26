@@ -84,6 +84,7 @@
     align-items: center;
     overflow-y: auto;
     background-color: #092B3A;
+    color: #fffff1;
   }
 
     
@@ -91,14 +92,15 @@
   
   .card-photo-name {
     padding: 15px;
-    background-color:#000000;
+    border-radius: 30px;
   }
   
   .photo {
-    width: 40%;
+    width: 60%;
     height: auto;
     border-radius: 50%;
     margin: 10px auto;
+    
   }
   
   .photo img {
@@ -261,13 +263,6 @@
   
   /* Media queries pour la responsivité */
 
-/* Écrans de taille moyenne */
-@media screen and (max-width: 768px) {
-    /* .menu-dashboard {
-    width: 30%;
-    } */
-    }
-    
     /* Écrans plus petits */
     @media screen and (max-width: 480px) {
     /* .block-dashboard {

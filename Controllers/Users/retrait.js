@@ -61,6 +61,7 @@ function recupereDataCompte(tab, elInput) {
     console.log('item', element.NumCompte);
     if (element.NumCompte === elInput) {
       afficheValueInput(element)
+      updateRetrait(element)
       return element;
     }
   }
@@ -70,6 +71,66 @@ function recupereDataCompte(tab, elInput) {
 function afficheValueInput(data){
    nomClient_retrait.value=`${data.nom}`
    prenomClient_retrait.value=`${data.prenom}`
-   contactClient_retrait.value=`${data.Contact}`
+  //  contactClient_retrait.value=data.Contact`
    sexeClient_retrait.value=`${data.sexe}`
+}
+
+async function sendElementRetrait(data) {
+  try {
+    const userRef = doc(userCollection, await recupereDocumentId(userCollection));
+    // Récupérer la valeur actuelle du soldActuel
+    const userSnapshot = await getDoc(userRef);
+    const userData = userSnapshot.data();
+    let soldActuel = userData.soldActuel || 0;
+
+    // Calculer la nouvelle valeur en soustrayant le montant du soldActuel
+    const montantClient = montantClient_retrait.value;
+    if (soldActuel >= montantClient) {
+      soldActuel -= montantClient;
+    } else {
+      alert("Le solde actuel est insuffisant pour effectuer le retrait.");
+      return; 
+    }
+    await updateDoc(userRef, {
+      soldActuel: soldActuel
+    });
+
+    alert("Retrait effectué avec succès");
+  } catch (error) {
+    console.error("Une erreur s'est produite lors de la mise à jour du retrait :", error);
+  }
+}
+
+function updateRetrait(data) {
+  btnTrans_retrait.addEventListener('click', (e) => {
+    e.preventDefault();
+    sendElementRetrait(data);
+  });
+}
+
+
+
+async function recupereDocumentId(userCollection) {
+  const allDocId = [];
+  try {
+    const querySnapshot = await getDocs(userCollection);
+    querySnapshot.forEach((doc) => {
+      const documentData = doc.data();
+      const documentId = doc.id;
+
+      if (documentData.NumCompte === numCompte.value || (Array.isArray(documentData) && documentData.includes(id))) {
+        allDocId.push(documentId);
+      }
+    });
+
+    console.log("ID du document 2:", allDocId);
+    if (allDocId.length > 0) {
+      return allDocId[0];
+    } else {
+      return null;
+    }
+  } catch (error) {
+    console.error("Une erreur s'est produite lors de la récupération des documents :", error);
+    return null;
+  }
 }

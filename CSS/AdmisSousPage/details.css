@@ -1,8 +1,7 @@
 /* First block details */
 .details-first-blocks {
-    width: 50%;
+    width: 70%;
     height: auto;
-    /* border: 1px solid black; */
     margin: 20px auto;
     padding: 10px;
   }
@@ -18,7 +17,7 @@
   }
   
   .card {
-    width: 340px;
+    width: 520px;
     height: 150px;
     background: whitesmoke;
     transition: 0.2s linear;

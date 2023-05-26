@@ -61,16 +61,12 @@ btn_form.addEventListener('click',(e)=>{
         },
         photoUser:"",
         metierClient:"",
-        soldes:{
-            soldActuel:0,
-            soldRetraits:0
-        },
+        soldActuel:0,
+        soldRetraits:0,
         depotBlock:[],
         retraitBlock:[],
-        messages:{
-            smsRetrait:0,
-            smsDepot:0,
-        },
+        smsRetrait:0,
+        smsDepot:0,
         Contact:"auto",
         NumCompte:accountNumber,
         sexe:"auto",

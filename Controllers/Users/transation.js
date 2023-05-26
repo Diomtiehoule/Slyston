@@ -58,21 +58,7 @@ function printValeur(elInput) {
 
   
 }
-// async function testCall(elInput){
-//   try {
-//     const documentId = await recupereDocumentId(userCollection);
 
-//     if (documentId) {
-//       const documentRef = doc(userCollection, documentId);
-//       // Utilisez documentRef ou documentId selon vos besoins
-//       console.log('ID du document :', documentId);
-//     } else {
-//       console.log('Aucun document trouvé avec la valeur de numCompte incluse.');
-//     }
-//   } catch (error) {
-//     console.error("Une erreur s'est produite lors de l'impression de la valeur :", error);
-//   }
-// }
 
 function recupereDataCompte(tab, elInput) {
   for (let i = 0; i < tab.length; i++) {
@@ -95,39 +81,26 @@ function afficheValueInput(data){
 }
 
 async function sendElementDepot(data) {
-  const depot = {
-    nomClient: nomClient.value,
-    prenomClient: prenomClient.value,
-    contactClient: contactClient.value,
-    sexeClient: sexeClient.value,
-    montantClient: montantClient.value
-  };
-
-  if (depot.montantClient === "") {
-    alert('Le montant du dépôt ne peut pas être vide.');
-    return;
-  }
-
   try {
-    const userRef = doc(userCollection,await recupereDocumentId(userCollection));
-    console.log(userRef, 'infos depot');
-    console.log('ID utilisateur :',await recupereDocumentId(userCollection));
-    console.log('Chemin vers la collection :',await recupereDocumentId(userCollection));
+    const userRef = doc(userCollection, await recupereDocumentId(userCollection));
 
+    // Récupérer la valeur actuelle du soldActuel
+    const userSnapshot = await getDoc(userRef);
+    const userData = userSnapshot.data();
+    const soldActuel = userData.soldActuel || 0;
+
+    // Calculer la nouvelle valeur en ajoutant l'élément actuel et le nouveau
+    const nouveauSoldActuel = soldActuel + Number(montantClient.value);
+
+    // Mettre à jour le document avec la nouvelle valeur
     await updateDoc(userRef, {
-     
-        soldActuel:Number(depot.montantClient)
-      
+      soldActuel: nouveauSoldActuel
     });
-
-    alert('Dépôt effectué avec succès !');
+    alert("Depot effectué avec succès")
   } catch (error) {
     console.error("Une erreur s'est produite lors de la mise à jour du dépôt :", error);
   }
-
-  // form3.reset();
 }
-
 function updateDepot(data) {
   btnTrans.addEventListener('click', (e) => {
     e.preventDefault();
@@ -135,23 +108,33 @@ function updateDepot(data) {
   });
 }
 
+
+
 async function recupereDocumentId(userCollection) {
+  const allDocId = [];
   try {
     const querySnapshot = await getDocs(userCollection);
-    for (const doc of querySnapshot.docs) {
+    querySnapshot.forEach((doc) => {
       const documentData = doc.data();
       const documentId = doc.id;
 
-      if (Array.isArray(documentData) && documentData.includes(numCompte.value)) {
-        console.log("ID du document :", documentId);
-        return documentId;
+      if (documentData.NumCompte === numCompte.value || (Array.isArray(documentData) && documentData.includes(id))) {
+        allDocId.push(documentId);
       }
-    }
+    });
 
-    console.log("Aucun document trouvé avec la valeur de numCompte incluse.");
-    return null;
+    console.log("ID du document 2:", allDocId);
+    if (allDocId.length > 0) {
+      return allDocId[0];
+    } else {
+      return null;
+    }
   } catch (error) {
     console.error("Une erreur s'est produite lors de la récupération des documents :", error);
     return null;
   }
 }
+
+
+
+ 
