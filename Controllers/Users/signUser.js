@@ -63,10 +63,10 @@ btn_form.addEventListener('click',(e)=>{
         metierClient:"",
         soldes:{
             soldActuel:0,
-            soldRetraits:0,
-            nbreRetraits:0,
-            nbreDepots:0
+            soldRetraits:0
         },
+        depotBlock:[],
+        retraitBlock:[],
         messages:{
             smsRetrait:0,
             smsDepot:0,
