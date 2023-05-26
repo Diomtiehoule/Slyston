@@ -9,6 +9,7 @@ const contactClient = document.querySelector('#Contact');
 const sexeClient = document.querySelector('#sexe');
 const montantClient = document.querySelector('#Montant');
 const btnTrans = document.querySelector('.send-depot-btn');
+const form3=document.querySelector('.section5')
 
 // Elements désactivés
 const element1 = document.querySelectorAll('.name-content_depot');
@@ -80,27 +81,48 @@ function afficheValueInput(data){
    sexeClient.value=`${data.sexe}`
 }
 
+let count = 0;
 async function sendElementDepot(data) {
-  try {
-    const userRef = doc(userCollection, await recupereDocumentId(userCollection));
+  const depot = {
+    nomClient: nomClient.value,
+    prenomClient: prenomClient.value,
+    contactClient: contactClient.value,
+    sexeClient: sexeClient.value,
+    montantClient: montantClient.value
+  };
 
-    // Récupérer la valeur actuelle du soldActuel
+  if (depot.montantClient === "") {
+    alert('Le montant du dépôt ne peut pas être vide.');
+    return;
+  }
+
+  try {
+    const userRef = doc(userCollection,await recupereDocumentId(userCollection));
     const userSnapshot = await getDoc(userRef);
     const userData = userSnapshot.data();
-    const soldActuel = userData.soldActuel || 0;
+    let soldActuel = userData.soldActuel || 0;
 
-    // Calculer la nouvelle valeur en ajoutant l'élément actuel et le nouveau
     const nouveauSoldActuel = soldActuel + Number(montantClient.value);
+    count++;
+    console.log(userRef, 'infos depot');
+    console.log('ID utilisateur :',await recupereDocumentId(userCollection));
+    console.log('Chemin vers la collection :',await recupereDocumentId(userCollection));
 
-    // Mettre à jour le document avec la nouvelle valeur
     await updateDoc(userRef, {
-      soldActuel: nouveauSoldActuel
+     
+        soldActuel:nouveauSoldActuel,
+        smsDepot:count
+      
     });
-    alert("Depot effectué avec succès")
+
+    alert('Dépôt effectué avec succès !');
   } catch (error) {
     console.error("Une erreur s'est produite lors de la mise à jour du dépôt :", error);
   }
+
+  form3.reset();
 }
+
 function updateDepot(data) {
   btnTrans.addEventListener('click', (e) => {
     e.preventDefault();
@@ -108,21 +130,17 @@ function updateDepot(data) {
   });
 }
 
-
-
 async function recupereDocumentId(userCollection) {
-  const allDocId = [];
   try {
     const querySnapshot = await getDocs(userCollection);
-    querySnapshot.forEach((doc) => {
+    for (const doc of querySnapshot.docs) {
       const documentData = doc.data();
       const documentId = doc.id;
 
       if (documentData.NumCompte === numCompte.value || (Array.isArray(documentData) && documentData.includes(id))) {
         allDocId.push(documentId);
       }
-    });
-
+    }
     console.log("ID du document 2:", allDocId);
     if (allDocId.length > 0) {
       return allDocId[0];
@@ -135,6 +153,3 @@ async function recupereDocumentId(userCollection) {
   }
 }
 
-
-
- 

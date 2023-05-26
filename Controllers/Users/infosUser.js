@@ -47,10 +47,13 @@ function testRecupere(data) {
     }
     return null;
 }
-
+let soldes=document.querySelectorAll('.cadre-elements>p')
 
 function createElement(data){
     nameUser.innerText=`${data.nom} ${data.prenom}`
+    soldes[0].innerText=`${data.smsDepot}`
+    soldes[1].innerText=`${data.smsRetrait}`
+    soldes[2].innerText=`${data.soldActuel}`
 }
 
 
@@ -77,6 +80,14 @@ async function updateGlobale(data) {
     sexe: sexe.value,
     age: age.value
   } 
+
+fichier.readAsDataURL(photo.files[0]);
+fichier.addEventListener("load", () => {
+    objData.photo = fichier.result;
+    objData.id = "A00L" + (localData.length + 1);
+    localData.push(objData);
+    localStorage.setItem("ADMINISTRATEURS_Pro_Gest_All", JSON.stringify(localData));
+});
   
   if (utilisateur.newName === "" || utilisateur.newLastname === "") {
     alert('Les informations ne sont pas complètes.');

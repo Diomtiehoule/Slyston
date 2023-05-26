@@ -7,7 +7,7 @@ const prenomClient_retrait = document.querySelector('#Prenom_retrait');
 const contactClient_retrait = document.querySelector('#Contact_retrait');
 const sexeClient_retrait = document.querySelector('#sexe_retrait');
 const montantClient_retrait = document.querySelector('#Montant');
-const btnTrans_retrait = document.querySelector('.send-depot-btn');
+const btnTrans_retrait = document.querySelector('.send-retrait-btn');
 
 // Elements désactivés
 const element1_retrait = document.querySelectorAll('.name-content');
@@ -62,18 +62,21 @@ function recupereDataCompte(tab, elInput) {
     if (element.NumCompte === elInput) {
       afficheValueInput(element)
       updateRetrait(element)
+      
       return element;
     }
   }
   return null;
 }
 
-function afficheValueInput(data){
-   nomClient_retrait.value=`${data.nom}`
-   prenomClient_retrait.value=`${data.prenom}`
-  //  contactClient_retrait.value=data.Contact`
-   sexeClient_retrait.value=`${data.sexe}`
+function afficheValueInput(data) {
+  nomClient_retrait.value = data.nom;
+  prenomClient_retrait.value = data.prenom;
+  // contactClient_retrait.value = data.Contact;
+  sexeClient_retrait.value = data.sexe;
 }
+
+let count = 0;
 
 async function sendElementRetrait(data) {
   try {
@@ -81,19 +84,19 @@ async function sendElementRetrait(data) {
     // Récupérer la valeur actuelle du soldActuel
     const userSnapshot = await getDoc(userRef);
     const userData = userSnapshot.data();
+    console.log('retrait', userData);
     let soldActuel = userData.soldActuel || 0;
+    // let soldRetraits = userData.soldRetraits || 0;
+    count++;
+    // Calculer la nouvelle valeur en ajoutant l'élément actuel et le nouveau
+    const nouveausoldRetraits = soldActuel - Number(montantClient_retrait.value);
 
-    // Calculer la nouvelle valeur en soustrayant le montant du soldActuel
-    const montantClient = montantClient_retrait.value;
-    if (soldActuel >= montantClient) {
-      soldActuel -= montantClient;
-    } else {
-      alert("Le solde actuel est insuffisant pour effectuer le retrait.");
-      return; 
-    }
+    // Mettre à jour le document avec la nouvelle valeur
     await updateDoc(userRef, {
-      soldActuel: soldActuel
+      soldRetraits: nouveausoldRetraits,
+      smsRetrait: count
     });
+    console.log('count', count);
 
     alert("Retrait effectué avec succès");
   } catch (error) {
@@ -101,10 +104,14 @@ async function sendElementRetrait(data) {
   }
 }
 
+
+// Mettez à jour la valeur de dataUpdate dans la fonction updateRetrait
 function updateRetrait(data) {
-  btnTrans_retrait.addEventListener('click', (e) => {
+  console.log('test');
+  const dataUpdate = btnTrans_retrait.addEventListener('click', (e) => {
     e.preventDefault();
     sendElementRetrait(data);
+    console.log('bonjour');
   });
 }
 
@@ -118,7 +125,7 @@ async function recupereDocumentId(userCollection) {
       const documentData = doc.data();
       const documentId = doc.id;
 
-      if (documentData.NumCompte === numCompte.value || (Array.isArray(documentData) && documentData.includes(id))) {
+      if (documentData.NumCompte === numCompte_retrait.value || (Array.isArray(documentData) && documentData.includes(numCompte_retrait.value))) {
         allDocId.push(documentId);
       }
     });

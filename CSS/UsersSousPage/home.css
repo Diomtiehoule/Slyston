@@ -148,9 +148,17 @@
         font-weight: bold;
     
     }
-    
-      
 
+    .cadres {
+      width: 80%;
+      flex-wrap: wrap;
+      font-size: 1.6rem;
+    }
+    .cadre-elements {
+      width: 200px;
+      margin-top: 20px;
+    }
+    
 
   }
   
