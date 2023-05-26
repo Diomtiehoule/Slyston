@@ -1,36 +1,25 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* header contact */
 .head-contact img{
     width: 100%;
-    height: 40vh;
 }
-.head-contact h1{
+.head-contact h3{
     position: absolute;
-    text-transform: uppercase;
     padding: 10%;
     margin-left: 5%;
     font-size: 2rem;
     color: #fff;
 }
-
-/* numero , adresse mail et localite */
 .icon_contact{
     height: 60vh;
     width: 70%;
     margin: 0 auto;
-    justify-content: space-between;
     margin-top: 30px;
     color: #fff;
     display: flex;
-    /* gap: 20px; */
+    gap: 20px;
     background-color: #092B3A;
 }
-.icon_contact h2{
+.icon_contact h3{
     padding-left: 20%;
     padding-top: 2%;
     text-align: center;
@@ -51,74 +40,64 @@
    margin-left: -5px;
 
 }
-.infoo-icons h3{
-    font-size: 1.3rem;
+.infoo-icons h4{
+    font-size: 1.5rem;
     padding-bottom: 20px;
-    text-transform: uppercase;
 }
-.infoo-icons p{
-    font-size: 1.2rem;
-}
+/* .infoo-icons .bx{
+    width: 100%;
+    height: 30px;
+} */
 .icon_contact .infoo-icons{
     margin-top: 10%; 
     
 }
-
-/* formulaire  */
 .form{
     height: 55vh;
     width: 70%;
     margin: 0 auto;
-    margin-top: 2%;
-    background: #092b3a79;
+    margin-top:30px;
+    background: #09232e20;
+}
+.bloc-form{
     
+    margin-left: 30%;
 }
-.form input{
-    width: 17.2%;
+/* .conta-piture{
+    width: 300px;
+    height: 300px;
+    background-color: darkorange;
+} */
+
+.input-One{
+    width: 8%;
+    height: 3vh;
+    padding-top: 4%;
+    padding-left: 10%;
+    width: 70%;
 }
-.form .img{
-    float: left;
-    width: 40%;
-}
-.form img{
-    float: left;
-    width: 90%;
-    height: 50vh;
-    margin: 3% 0 0 3%;
-}
-.form .inputs{
-    padding-top: 2%;
-}
-.form .input:nth-child(1){
-    margin-top: 1%;
-}
-.form .inputs .inp{
-    margin-top: 5%;
-    margin-bottom: 5%;
+.input-two{
     display: flex;
-    justify-content: space-between;
-    padding-right: 5%;
+    padding: 4%;
+    padding-left: 9%;
+    gap: 5px;
 }
-.inpMail input{
-    width: 75%;
-}
-.inpNum input{
-    width: 73%;
-}
-
-.submit{
-    margin-top: 2%;
-    height: 6vh;
-    background-color: #092B3A;
-    color: white;
+.input-two label{
+    
+    margin-top: -2%;
 }
 
+.bloc-form .textarea{
+    width: 100%;
+   
+}
 
 .map{
     height: 55vh;
     width: 70%;
     margin: 0 auto;
-    margin-top: 2%
+    margin-top: 30px;
+    background: #092b3a5e;
 }
 .map iframe{
     height: 55vh;
@@ -129,183 +108,3 @@
  /* code spource  */
  
   /* code spource  */
-
-
-
-  /* responsive  */
-
-
-@media screen  and (max-width : 1500px) {
-    .head-contact img{
-        height: 60vh;
-    }
-    .head-contact h1{
-        font-size: 3rem;
-        margin-top: 1.5%;
-    }
-      /* RESPPONSIVE DU FORMULAIRE */
-    label{
-        font-size: 1.2rem;
-    }
-    .form input{
-        width: 17.2%;
-        height: 5vh;
-    }
-    .form .inputs .inp{
-        margin-top: 2.5%;
-        margin-bottom: 2.5%;
-    }
-    .inpMail input{
-        width: 95%;
-    }
-    .inpNum input{
-        width: 95%;
-    }
-    textarea{
-        width: 59%;
-        height: 11vh;
-    }
-    .submit{
-        margin-top: 0;
-    }
-}
-  @media screen  and (max-width :900px){
-      /* RESPPONSIVE DU FORMULAIRE */
-    .form .img{
-        float: left;
-        width: 50%;
-    }
-    .form img{
-        float: left;
-        width: 90%;
-        height: 50vh;
-        margin: 3% 0 0 3%;
-    }
-    .inpMail input{
-        width: 90%;
-    }
-    .inpNum input{
-        width: 90%;
-    }
-    textarea{
-        width: 49%;
-        height: 11vh;
-    }
-  }
-  @media screen  and (max-width : 1100px) {
-    .head-contact img{
-        height: 50vh;
-    }
-    .head-contact h1{
-        font-size: 2.5rem;
-        margin-top: 2.5%;
-    }
-}
-@media screen  and (max-width : 800px) {
-    .head-contact img{
-        height: 50vh;
-    }
-    .head-contact h1{
-        font-size: 2.3rem;
-        margin-top: 7%;
-
-    }
-}
-@media screen  and (max-width : 600px) {
-    .head-contact img{
-        height: 35vh;
-    }
-    .head-contact h1{
-        font-size: 1.2rem;
-        margin-top: 15%;
-
-    }
-}
-  @media screen and (max-width : 500px) {
-      /* RESPPONSIVE DU FORMULAIRE */
-    .form{
-        height: 53vh;
-        width: 70%;
-        margin: 0 auto;
-        margin-top: 2%;
-        background: #092b3a79;
-        
-    }
-    .form .img{
-        float: left;
-        width: 55%;
-        height: 40vh;
-    }
-    textarea{
-        width: 36%;
-        height: 10vh;
-    }
-    .submit{
-        width: 30%;
-    }
-    label{
-        font-size: .8rem;
-    }
-  }
-
-  @media screen and (max-width : 350px) {
-      /* RESPPONSIVE DU FORMULAIRE */
-    
-    .form .img{
-        float: left;
-        width: 55%;
-        height: 30vh;
-    }
-    
-    .submit{
-        width: 30%;
-        font-size: .5rem;
-    }
-    
-  }
-
-  @media screen  and (max-width : 2500px) {
-
-    /* RESPPONSIVE DU FORMULAIRE */
-    .form{
-        height: 70vh;
-        width: 70%
-        
-    }
-    .form input{
-        width: 17.2%;
-    }
-    .form .img{
-        float: left;
-        width: 40%;
-    }
-    .form img{
-        height: 60vh;
-    }
-    label{
-        font-size: 1.3rem;
-    }
-    .form input{
-        width: 20%;
-        height: 7vh;
-    }
-    .form .inputs .inp{
-        margin-top: 1%;
-        margin-bottom: 1%;
-    }
-    .inpMail input{
-        width: 16vw;
-    }
-    .inpNum input{
-        width: 16vw;
-    }
-    textarea{
-        width: 59%;
-        height: 20vh;
-    }
-    .submit{
-        margin-top: 1%;
-        height: 7vh;
-        font-size: 1.5rem;
-    }
-}
