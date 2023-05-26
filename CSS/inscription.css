@@ -106,8 +106,6 @@ button:hover{
     display: flex;
 }
 @media screen and (max-width : 1200px) {
-    .form-inscription{
-    }
     .form-inscription p{
         margin-top: 5%;
     }

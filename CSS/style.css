@@ -70,7 +70,6 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  border: 1px solid black;
 }
 .text > h5 {
   font-size: 1.6rem;
@@ -187,7 +186,6 @@ body {
 .main-acc {
   width: 100%;
   height: auto;
-  border: 1px solid black;
 }
 .carte-acc {
   width: 100%;
@@ -248,6 +246,9 @@ body {
   background: #fff;
   cursor: pointer;
   position: relative;
+  border-radius: 5px;
+ box-shadow: -9px 9px 18px #5a5a5a,
+              9px -9px 18px #ffffff;
 }
 .form-acc h4 {
   color: #fff;
